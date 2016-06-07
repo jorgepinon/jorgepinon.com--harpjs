@@ -1,0 +1,13 @@
+<%
+	// requires an artwork data object from _data.json
+%>
+
+<% if( artwork ) { %>
+<figure>
+
+	<img src="artworks/<%- artwork.imgFilename %>" alt="">
+
+	<figcaption><b><%- artwork.title %></b> <br><%- artwork.description %></figcaption>
+
+</figure>
+<% } %>

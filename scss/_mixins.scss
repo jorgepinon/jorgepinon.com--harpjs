@@ -1,0 +1,125 @@
+/* Mixins =================================================== */
+
+@function black($opacity){
+	@return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+	@return rgba(255,255,255,$opacity)
+}
+
+@mixin ellipsis {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+// gradient
+@mixin bordered($top-color: $border-color, $right-color: $border-color, $bottom-color: $border-color, $left-color: $border-color) {
+	border-top : solid 1px $top-color;
+	border-left : solid 1px $left-color;
+	border-right : solid 1px $right-color;
+	border-bottom : solid 1px $bottom-color;
+}
+
+@mixin drop-shadow($x-axis: 0, $y-axis: 2px, $blur: 3px, $alpha: 0.4) {
+	@include box-shadow($x-axis $y-axis $blur rgba(0, 0, 0, $alpha));
+}
+
+//mediaqueries
+@mixin respond-min($width) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+@mixin respond-max($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin clearfix {
+	*zoom : 1;
+	&:before,
+	&:after {
+	display: table;
+	content : ""; }
+	&:after {
+	clear : both; } }
+
+.clearfix {
+	@include clearfix;
+}
+
+// image replacement
+@mixin hide-text() {
+	text-indent : 100%;
+	white-space : nowrap;
+	overflow : hidden; }
+
+.ir {
+	@include hide-text;
+	background-repeat: no-repeat;
+}
+
+// Hide from visual and speaking browsers
+@mixin hidden() {
+	display : none !important;
+	visibility : hidden;
+}
+
+// Hide but maintain layout
+@mixin invisible() {
+	visibility : hidden;
+}
+
+// @include resize(VALUE) (none, both, horizontal, vertical, inherit)
+@mixin resize($direction: both) {
+	resize : $direction;
+	overflow : auto;
+}
+
+// @include userselect(VALUE) (all, element, none, text)
+@mixin user-select($select) {
+	-webkit-user-select : $select;
+	-moz-user-select : $select;
+	-o-user-select : $select;
+	user-select : $select;
+}
+
+// Hidden but available to speaking browsers
+@mixin visuallyhidden() {
+	overflow : hidden;
+	position : absolute;
+	clip : rect(0 0 0 0);
+	height : 1px;
+	width : 1px;
+	margin : -1px;
+	padding : 0;
+	border : 0;
+	// Make visuallyhidden focusable with a keyboard
+
+	&.focusable {
+		&:active,
+		&:focus {
+			position : static;
+			clip : auto;
+			height : auto;
+			width : auto;
+			margin : 0;
+			overflow: visible;
+		}
+	}
+}
+
+// remove visuallyhidden styles
+@mixin visible() {
+	overflow : visible;
+	position : static;
+	clip : auto;
+	height : auto;
+	width : auto;
+	margin : 0;
+}

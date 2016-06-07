@@ -1,0 +1,18 @@
+// navClass, start and end passed as args
+- var postsArray = []
+
+// create an array from data object
+for post, slug in public.posts._data
+	if post.isPublished
+		if post.date
+			- post.slug = slug
+			- postsArray.push(public.posts._data[slug])
+
+ul(class='posts #{navClass}')
+
+	for post in postsArray.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).slice(start, end)
+
+		li
+			h3.post-title
+				a(href="/posts/#{ post.slug }.html")= post.title
+			time.post-date(datetime="#{ new Date(post.date) }")= post.date

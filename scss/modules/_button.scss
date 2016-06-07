@@ -1,0 +1,145 @@
+//  buttons
+//  ---------------------
+
+$button-bg 					: #62A01D !default;
+$button-color 				: #f6faf1 !default;
+$button-height 				: 40px !default;
+
+
+button:focus {
+	outline: 0;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+.btn, .btn:visited, %btn, %btn:visited {
+	display: inline-block;
+	position: relative;
+	padding: 0 1.5em 0.15em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: $button-height;
+	cursor: pointer;
+	background-color: $button-bg;
+	color: $button-color;
+	border: 0;
+	outline: 0;
+	line-height: $button-height;
+
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+
+	transition: padding-left 300ms ease-out;
+	@include single-box-shadow(0, 2px, 2px, 0, black(.35));
+
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		outline: 0;
+		background-color: darken($button-bg, 5);
+	}
+	&:active {
+		top: 1px;
+		margin-bottom: 0;
+		box-shadow: 0 1px 0 0 rgba(0,0,0,0.6);
+	}
+
+	& + p {
+		margin-top: 1em;
+	}
+
+	.icon {
+		position: absolute;
+		top: 10px;
+		left: 14px;
+		height: 22px;
+		width: 22px;
+	}
+}
+.btn::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+// bare bones link appearance
+.btn--link {
+	@extend .link--padded;
+	background: none;
+	color: $link-color;
+	cursor: pointer;
+	border: 0;
+}
+
+
+// actions
+.btn--add, .btn--add:visited, .btn--add:focus {
+	background-color: #7BBD11;
+	color: $white;
+	&:focus, &:active {
+		background-color: darken(#7BBD11, 5);
+	}
+}
+.btn--delete, .btn--delete:visited, .btn--delete:focus {
+	background-color: $error-bg;
+	color: white;
+	&:focus, &:active {
+		background-color: darken($error-bg, 5);
+	}
+}
+.btn--link--delete {
+	color: $error-bg;
+}
+
+.btn--disabled, .btn--disabled:visited, .btn--disabled:focus {
+	opacity: 0.35;
+	background-color: #999;
+	color: #eee;
+	box-shadow: none;
+	cursor: not-allowed;
+}
+
+
+// size modifiers
+.btn--fit {
+	width: 100%;
+}
+.btn--large {
+	font-size: 1.5em;
+	line-height: $button-height *1.75;
+	border-radius: $button-height *1.75;
+}
+
+.btn--clear {
+	background-color: transparent;
+	border: solid 1px $white;
+	color: $white;
+}
+
+.btn--inverse, .btn--inverse:visited, .btn--inverse:focus, .btn--inverse:hover, .btn--inverse:active {
+	@extend %btn;
+	background-color: transparent;
+	color: $white;
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
+	&:active, &:hover {
+		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+	}
+}
+
+.btn--bottom {
+	opacity: 0;
+	transform: translate3d(0, 0, 0);
+	transition: transform 400ms, opacity 400ms;
+	transition-delay: 600ms;
+	transition-timing-function: ease;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+
+	width: 200px;
+	margin-left: -100px;
+
+}
+
+.btn--has-icon {
+	position: relative;
+	padding-left: 40px;
+}

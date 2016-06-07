@@ -1,0 +1,35 @@
+<ul class="block-list">
+
+<%
+	var posts = [];
+	for( slug in public.posts._data ) {
+		var post = public.posts._data[slug];
+		if( post.date && post.published !== false ) {
+			post.slug = slug;
+			posts.push(post);
+		}
+	}
+
+	// order posts by date into an array
+	var postsByDate = posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; });
+
+	postsByDate.forEach( function(post, i, array) {
+		if( post.slug == current.source ) {
+			next = postsByDate[i - 1];
+			prev = postsByDate[i + 1];
+
+			if( next ) { %>
+				<li style="text-align: right;">Next: <a href="<%- next.slug %>.html"><%- next.title %>&rarr;</a></li>
+			<% }
+
+			if( prev ) { %>
+				<li>&larr; Previous: <a href="<%- prev.slug %>.html"><%- prev.title %></a></li>
+			<% }
+
+		}
+	});
+%>
+
+</ul>
+
+<p><a href="/posts/archive.html">Archive</a></p>

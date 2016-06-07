@@ -1,0 +1,26 @@
+<%
+	var posts = [];
+	for( slug in public.posts._data ) {
+		var post = public.posts._data[slug];
+		if( post.date && post.published !== false ) {
+			post.slug = slug;
+			posts.push(post);
+		}
+	}
+
+	// order posts by date into an array
+	var postsByDate = posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; });
+
+%>
+
+<ul class="posts <%- navClass %>">
+
+	<% postsByDate.forEach( function(post) { %>
+		<li>
+			<h3 class="post-title"><a href="<%- post.slug %>"><%- post.title %></a></h3>
+			<div><%- post.summary %></div>
+			<time class="post-date" datetime="<%- new Date(post.date) %>"><%- post.date %></time>
+		</li>
+	<% }); %>
+
+</ul>

@@ -1,0 +1,12 @@
+{
+	"domains": [""],
+	"globals": {
+		"site_title": "jorgepinon.com",
+		"twitter": "jorgepinon",
+		"site_url": "http://jorgepinon.com",
+		"sitemap": {
+			"enabled": true,
+			"changefreq": "daily"
+		}
+	}
+}

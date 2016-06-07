@@ -1,0 +1,35 @@
+//   =LISTS   ==================================================
+.list--unstyled {
+	margin: 0; padding: 0;
+	list-style: none;
+}
+
+.list--inline {
+	li {
+		display: inline-block;
+	}
+}
+
+
+// .block-list
+.block-list {
+	list-style: none;
+	margin-left: 0;
+	border-top: solid 1px $border-color;
+
+	> li {
+		border-bottom: solid 1px $border-color;
+		padding: $half-spacing-unit;
+	}
+}
+.entry + .block-list {
+	margin-top: 4em;
+}
+
+// link element within li expands to full space
+// <li><a class="block-list-link">...</a></li>
+.block-list-link {
+	display: block;
+	padding: $half-spacing-unit;
+	margin: -$half-spacing-unit;
+}

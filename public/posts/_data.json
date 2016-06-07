@@ -1,0 +1,163 @@
+{
+    "aurora-if-i-were-a-bee": {
+      "layout": "_entry",
+      "title": "If I Were a Bee",
+      "summary": "Aurora's bee-related homework writing",
+      "tags": ["Misc"],
+      "date": "2014-07-30",
+      "isPublished": true
+    },
+    "aurora-office-plan": {
+      "layout": "_entry",
+      "title": "Plan",
+      "summary": "A note found after a visit by Aurora to my office one day",
+      "tags": ["Misc"],
+      "date": "2014-03-04",
+      "isPublished": true
+    },
+    "overcast-app": {
+      "layout": "_entry",
+      "title": "Overcast app",
+      "summary": "",
+      "tags": ["Misc"],
+      "date": "2014-07-24",
+      "isPublished": true
+    },
+  "radio-button-buttons": {
+    "layout": "_entry",
+    "title": "Radio Button Buttons",
+    "summary": "",
+    "tags": ["CSS", "UI"],
+    "date": "2014-07-09",
+    "isPublished": true
+  },
+  "munsell-color-wheel": {
+    "layout": "_entry",
+    "title": "The Munsell Color Wheel",
+    "summary": "",
+    "tags": ["Misc"],
+    "date": "2014-05-14",
+    "isPublished": true
+  },
+  "app-dot-net": {
+    "layout": "_entry",
+    "title": "App Dot Net in Maintenance Mode",
+    "summary": "There's still a chance",
+    "tags": ["UX"],
+    "date": "2014-05-09",
+    "isPublished": true
+  },
+  "wufoo-blog-updates": {
+    "layout": "_entry",
+    "title": "Wufoo Blog Updates",
+    "summary": "A popup listing what you've missed from the blog",
+    "tags": ["UX"],
+    "date": "2014-04-18",
+    "isPublished": true
+  },
+  "flat-is-fine-but-legible-is-better": {
+    "layout": "_entry",
+    "title": "Flat is fine, but legible is better",
+    "summary": "Legibility and accessibility still need to be part of your flat design.",
+    "tags": ["Design","Accessibility"],
+    "date": "2014-02-03",
+    "isPublished": true
+  },
+  "sad-mac-app-dialogs": {
+    "layout": "_entry",
+    "title": "Sad Mac App Dialogs",
+    "summary": "App dialog boxes can't be customized",
+    "tags": ["Mac"],
+    "date": "2014-01-21",
+    "isPublished": true
+  },
+  "4k-and-web-images": {
+    "layout": "_entry",
+    "title": "4K monitors and images for the web",
+    "summary": "When medium is too big",
+    "tags": ["mobile", "design"],
+    "date": "2014-01-18",
+    "isPublished": true
+  },
+  "check-your-email-for-a-link": {
+    "layout": "_entry",
+    "title": "Onboarding should be easy",
+    "summary": "Check your email for a link before reading this post",
+    "tags": ["UX"],
+    "date": "2013-08-04",
+    "isPublished": true
+  },
+  "mobile-doesnt-mean-that": {
+    "layout": "_entry",
+    "title": "You’re not still using the word “mobile”, right?",
+    "summary": "LOL! It’s like saying “cyberspace”!",
+    "tags": ["mobile","development","design"],
+    "date": "2013-02-24",
+    "isPublished": true
+  },
+  "the-tv-remote": {
+    "layout": "_entry",
+    "title": "The TV Remote",
+    "summary": "Phones and tablets should end the age of TV remotes",
+    "tags": ["apple","tech"],
+    "date": "2013-01-30",
+    "isPublished": true
+  },
+  "a-new-design-layer": {
+    "layout": "_entry",
+    "title": "Proposal for a new CSS design layer",
+    "tags": ["Design, CSS"],
+    "date": "2013-01-10",
+    "isPublished": true
+  },
+  "why-i-cant-use-photoshop": {
+    "layout": "_entry",
+    "title": "Why I can’t switch to Photoshop for icons and other UI assets",
+    "tags": ["Design, UX"],
+    "date": "2012-09-09",
+    "isPublished": true
+  },
+  "disable-java-on-mac-browsers": {
+    "layout": "_entry",
+    "title": "Disable java on Mac OS browsers",
+    "tags": ["Link"],
+    "date": "2012-08-29",
+    "isPublished": true
+  },
+  "tate-modern": {
+    "layout": "_entry",
+    "title": "Tate Modern",
+    "tags": ["photo"],
+    "date": "2012-03-06",
+    "isPublished": true
+  },
+  "no-one-wants-to-make-lists-that-way": {
+    "layout": "_entry",
+    "title": "No one wants to make lists (that way)",
+    "tags": ["ux"],
+    "date": "2012-02-12",
+    "isPublished": true
+  },
+  "for-whom-helvetica-speaks": {
+    "layout": "_entry",
+    "title": "For whom Helvetica speaks",
+    "tags": ["web design, typography"],
+    "date": "2012-02-10",
+    "isPublished": true
+  },
+  "you-can-use-2-spaces": {
+    "layout": "_entry",
+    "title": "Yes, you can use 2 spaces after periods.",
+    "tags": ["typography"],
+    "date": "2012-02-04",
+    "isPublished": true
+  },
+    "a-service-for-regular-investors": {
+    "layout": "_entry",
+    "title": "A service for regular investors",
+    "tags": ["misc"],
+    "date": "2012-02-01",
+    "isPublished": true
+  }
+
+}

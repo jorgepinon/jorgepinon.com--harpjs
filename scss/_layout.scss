@@ -1,0 +1,55 @@
+@import "./modules/grid";
+@import "./modules/sticky-footer";
+
+$constrained-width : 1200px !default;
+
+
+.single-column {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 480px;
+}
+
+.index .container {
+	background-image: url(/assets/img/bg/redbug-wall.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.site #main {
+	height: 100vh;
+	display: table;
+
+	// keep it above wallpaper
+	position: relative;
+}
+
+.entry {
+	padding-bottom: 2em;
+	margin: 0 auto 2em;
+	max-width: 48em;
+}
+
+
+[role="contentinfo"] {
+	position: relative;
+	padding: $half-spacing-unit 0 $base-spacing-unit;
+	background-color: $page-bg;
+	color: $page-color;
+
+	@media (min-width: 768px) {
+		padding-right: $half-spacing-unit;
+		padding-left: $half-spacing-unit;
+	}
+}
+
+.l-constrained {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: $constrained-width;
+}
+
+.l-max1280 { max-width: 1280px; }
+.l-max1024 { max-width: 1024px; }
+.l-max768 { max-width: 768px; }
+.l-max40em { max-width: 40em; }

@@ -1,0 +1,48 @@
+//  icons
+//  ---------------------
+
+//  svg icons added to page html
+//  <svg class="icon">
+//    <use xlink:href="#icon--call" />
+//  </svg>
+
+.stroke {
+	stroke: #222;
+}
+#icon--x .stroke,
+#icon--plus .stroke,
+#icon--check .stroke {
+	stroke-width: 3;
+	fill: none;
+	stroke-linecap: round;
+}
+#icon--check .stroke {
+	stroke-width: 6;
+}
+.icon--call rect {
+	fill: #333;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+}
+.icon--2x {
+	width: 36px;
+	height: 36px;
+}
+.icon--call .what {
+	fill: white;
+}
+
+.animated-check {
+	stroke-dasharray: 45, 48;
+	stroke-dashoffset: 46;
+	animation: checkit 400ms ease-out forwards;
+	animation-delay: 1s;
+}
+@keyframes checkit {
+	to {
+		stroke-dashoffset: 0;
+	}
+}

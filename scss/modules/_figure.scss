@@ -1,0 +1,39 @@
+figure {
+	padding: 1em;
+	margin: 0 0 1em;
+	border: solid 1px #ddd;
+	background-color: #fff;
+	text-align: center;
+
+	&.standalone {
+		display: block;
+		@include clearfix();
+		margin: 0 auto;
+		border: 0;
+	}
+
+	img {
+		max-width: 100%;
+		display: inline-block;
+	}
+
+	figcaption {
+		clear: left;
+		font-size: 1em;
+		line-height: 1;
+		height: 3em;
+		padding: 0.5em;
+		text-align: center;
+		font-style: italic;
+	}
+}
+.worksample figure {
+	display: inline-block;
+}
+.artsample figure {
+	text-align: center;
+
+	img {
+		margin: 0 auto;
+	}
+}

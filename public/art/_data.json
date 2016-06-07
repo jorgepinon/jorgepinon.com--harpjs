@@ -1,0 +1,170 @@
+{
+	"angel": {
+		"title": "Angel",
+		"description": "51.5 x 57 in., acrylic on canvas",
+		"imgFilename": "Angel51_5x57_5.jpg",
+		"tags": ["painting"],
+		"date": "1998"
+	},
+	"apunta": {
+		"title": "Apunta",
+		"description": "Acrylic on canvas",
+		"imgFilename": "Apunta.jpg",
+		"tags": ["painting"],
+		"date": "1998"
+	},
+	"barbuo": {
+		"title": "Barbuo",
+		"description": "Charcoal and chalk pastel on paper",
+		"imgFilename": "Barbuo_30x42.jpg",
+		"tags": ["pastel, charcoal"],
+		"date": "1996"
+	},
+	"calle-caliente": {
+		"title": "Calle Caliente",
+		"description": "24 x 19 in., chalk pastel on paper",
+		"imgFilename": "calle_caliente_35x25.jpg",
+		"tags": ["pastel, charcoal"],
+		"date": "1996"
+	},
+	"castro-deploys": {
+		"title": "Castro Deploys the Incephalitis Mosquitos!",
+		"description": "24 x 36 in., acrylic on canvas",
+		"imgFilename": "CastroDeploys!40_5x51.jpg",
+		"tags": ["painting"],
+		"date": "2002"
+	},
+	"dictator-01": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator01.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"dictator-02": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator02.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"dictator-03": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator03.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"dictator-04": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator04.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"dictator-05": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator05.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"dictator-06": {
+		"title": "Dictator",
+		"description": "16 x 24 in., charcoal and chalk pastel on sketch paper",
+		"imgFilename": "Dictator06.jpg",
+		"tags": ["drawing"],
+		"date": "1995"
+	},
+	"domino-players": {
+		"title": "Domino Players",
+		"description": "24 x 28 in., acrylic on canvas",
+		"imgFilename": "dominoplayers.jpg",
+		"tags": ["painting"],
+		"date": "2001"
+	},
+	"eneidas-husband": {
+		"title": "Eneida's Husband",
+		"description": "35 x 41 in., acrylic on canvas",
+		"imgFilename": "EneidasHusband_35x41.jpg",
+		"tags": ["painting"],
+		"date": "2003"
+	},
+	"favorite-chair": {
+		"title": "Favorite Chair",
+		"description": "41 x 29.5 in., charcoal and chalk pastel on paper",
+		"imgFilename": "FavoriteChair_41x29_5.jpg",
+		"tags": ["drawing"],
+		"date": "2001"
+	},
+	"girl-and-castro": {
+		"title": "Girl and Castro",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "GirlandCastro_30x42.jpg",
+		"tags": ["drawing"],
+		"date": "1997"
+	},
+	"girl-window": {
+		"title": "Girl by a Window",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "girlwindow_30x42.jpg",
+		"tags": ["drawing"],
+		"date": "1997"
+	},
+	"gorda-y-la-ventana": {
+		"title": "La Gorda y la Ventana",
+		"description": "28 x 40 in., charcoal and chalk pastel on paper",
+		"imgFilename": "GordaYLaVentana_28x40.jpg",
+		"tags": ["drawing"],
+		"date": "1997"
+	},
+	"inclan-fruit-stand": {
+		"title": "Inclán Fruit Stand",
+		"description": "24 x 32 in., charcoal and chalk pastel on paper, mounted on wood",
+		"imgFilename": "InclanFruitStand_24x32.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"island": {
+		"title": "Island",
+		"description": "41 x 54 in., acrylic on canvas",
+		"imgFilename": "island.jpg",
+		"tags": ["painting"],
+		"date": "2001"
+	},
+	"king-of-fools": {
+		"title": "King of Fools",
+		"description": "35 x 25 in., chalk pastel on paper",
+		"imgFilename": "kingoffools_35x25.jpg",
+		"tags": ["pastel"],
+		"date": "2001"
+	},
+	"la-pared": {
+		"title": "La Pared",
+		"description": "46 x 26 in., chalk pastel on paper",
+		"imgFilename": "LaPared_46x26.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"la-sala": {
+		"title": "La Pared",
+		"description": "44.5 x 30 in., charcoal and chalk pastel on paper, mounted on wood",
+		"imgFilename": "LaSala_44_5x30.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"lion-after-hurricane": {
+		"title": "Lion (After a Hurricane)",
+		"description": "30 x 22 in., acrylic on canvas",
+		"imgFilename": "Lion_AfterHurricane_30x22.jpg",
+		"tags": ["painting"],
+		"date": "1997"
+	},
+	"perdido": {
+		"title": "Perdido",
+		"description": "29.5 x 41 in., chalk pastel on paper, mounted on wood",
+		"imgFilename": "Perdido_29_5x41.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	}
+}

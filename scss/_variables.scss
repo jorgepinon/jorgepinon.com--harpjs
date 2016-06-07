@@ -1,0 +1,107 @@
+/* Variables =================================================== */
+
+// type
+$base-font : 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$custom-font : 'Source Sans Pro', sans-serif;;
+$base-font-size : 14px;
+$base-line-height : 1.4;
+$base-heading-font : inherit;
+$base-heading-font-weight : bold;
+$base-heading-color : inherit;
+
+
+// globals
+$tap-height : 42px;
+
+$handheld-base-font-size	: $base-font-size;
+$tablet-base-font-size		: 16px;
+$desktop-base-font-size		: 18px;
+
+$baseline : $base-line-height;
+$gutterwidth : 20px;
+
+$border-radius		: 4px;
+
+$custom-timing-function 	: cubic-bezier(0, .76, .41, 1.05);
+
+
+// compass defaults
+$default-border-radius: $border-radius;
+
+$base-spacing-unit: $base-line-height !default;
+$half-spacing-unit: 1em;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+
+
+// palette
+$black 			: #1e2023;
+$dark-grey 		: #282B35;
+$text			: #444;
+$grey 			: #555963;
+$light-grey 	: #d2d2d2;
+$white 			: #fcfcfc;
+
+$body-bg 			: $white;
+$body-color 		: $text;
+$page-bg 			: $body-bg;
+$page-color 		: $body-color;
+$panel-bg			: $body-bg;
+$panel-color		: $body-color;
+$primary-color		: #739D2F;
+$secondary-color	: #B53D19;
+$border-color    	: $light-grey;
+$border-width    	: 1px;
+$border-style   	: solid;
+$overlay-bg			: rgb(23,20,43);
+$overlay-color		: $light-grey;
+
+$link-color 			: #6b985f;
+$link-color-visited		: darken($link-color, 10);
+
+$alert-bg 		: #dae5e5;
+$inverse-bg 	: rgb(65,65,65);
+$warning-bg 	: rgb(237,218,107);
+$success-color	: green;
+$success-bg 	: #A3CC54;
+$error-color	: tomato;
+$error-bg 		: #DC2E07;
+
+// backgrounds
+$wallpaper		: none;
+
+// navs
+$nav-link-padding: .5em 1em;
+
+// forms
+$input-bg : 			transparent;
+$input-border-color :	lighten($page-color, 40%);
+$input-border-width	:	1px;
+$input-border-style	:	solid;
+$input-active-bg :		lighten($page-color, 20%);
+$input-active-color :	$page-color;
+$input-hover-bg :		$input-active-bg;
+$input-focus-color :	$input-active-color;
+$placeholder-color : 	$light-grey;
+
+// default site settings
+$def-site-body-bg 			: $white;
+$def-site-body-color 		: $text;
+
+
+$em-base: 16px !default;
+@function emCalc($pxWidth) {
+	@return $pxWidth / $em-base * 1em;
+}
+
+//breakpoints
+$tablet					: 768px;
+$desktop				: 1024px!default;
+$desktop-large			: 1200px!default;
+
+$breakpoint-xs			: 480px !default; 	// 480/14 = 34.2857143em
+$breakpoint-small		: 600px !default; 	// 600/14 = 42.8571429em
+$breakpoint-medium		: 768px !default; 	// 768/16 = 48em
+$breakpoint-large		: 1024px !default; 	// 1024//16 = 64em
+$breakpoint-xl			: 1280px !default; 	// 1280/16 = 80em
+$breakpoint-xxl			: 1920px !default; 	// 1920/16 = 120em

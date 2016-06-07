@@ -1,0 +1,107 @@
+{
+  "choose-digital-website": {
+    "title": "ChooseDigital.com",
+    "hasPost": true,
+    "thumbnail": "img/th/choose_website_homepage-sm.jpg",
+    "largeImg": "img/choose_website_homepage.jpg",
+    "tags": ["Project Lead","css", "javascript", "html", "cms"]
+  },
+  "avaya-rewards-site": {
+    "title": "Avaya Rewards",
+    "hasPost": true,
+    "thumbnail": "img/th/avaya_dashboard-sm.jpg",
+    "largeImg": "img/avaya_dashboard.jpg",
+    "tags": ["Project Lead","css", "javascript", "html"]
+  },
+  "prologic-website": {
+    "title": "ProLogic Systems",
+    "hasPost": false,
+    "thumbnail": "img/th/prologic-homepage-sm.jpg",
+    "largeImg": "img/prologic-homepage-full.jpg",
+    "tags": ["web design", "cms","css", "html", "javascript"]
+  },
+  "grassroots-events": {
+    "title": "GrassRoots Events",
+    "hasPost": true,
+    "thumbnail": "img/th/grevents_home-sm.jpg",
+    "largeImg": "img/grevents_home.jpg",
+    "tags": ["Project Lead","css", "html"]
+  },
+  "amd-rewards-site": {
+    "title": "AMD Rewards",
+    "hasPost": true,
+    "thumbnail": "img/th/amd_home-sm.jpg",
+    "largeImg": "img/amd_home.jpg",
+    "tags": ["Project Lead","css", "javascript", "html"]
+  },
+  "hp-palm-rewards": {
+    "title": "HP Palm Rewards",
+    "hasPost": true,
+    "thumbnail": "img/th/hprewards-home-sm.jpg",
+    "largeImg": "img/hprewards_home_lg.jpg",
+    "tags": ["Project Lead","css", "html", "javascript"]
+  },
+  "rewards-network-website": {
+    "title": "Rewards Network microsite",
+    "hasPost": false,
+    "thumbnail": "img/th/rndining-sm.jpg",
+    "largeImg": "img/rndiningsite-detail.jpg",
+    "tags": ["web design","css", "html"]
+  },
+  "grizzlies-gametime": {
+    "title": "Grizzlies Gametime",
+    "hasPost": true,
+    "thumbnail": "img/th/grizzgametime-sm.jpg",
+    "largeImg": "img/grizzgametime_detail.jpg",
+    "tags": ["Project Lead","css", "html", "javascript"]
+  },
+  "international-paper": {
+    "title": "International Paper - Sustainability",
+    "hasPost": false,
+    "thumbnail": "img/th/ip_web-sm.jpg",
+    "largeImg": "img/ip_web_detail.jpg",
+    "tags": ["web design","css", "html", "javascript"]
+  },
+  "humane-society-of-memphis": {
+    "title": "Humane Society of Memphis",
+    "hasPost": true,
+    "thumbnail": "img/th/humsoc_web-sm.jpg",
+    "largeImg": "img/humsoc_web_detail.jpg",
+    "tags": ["HTML","css", "javascript", "expression engine cms"]
+  },
+  "smallwoods-catalog": {
+    "title": "Smallwood’s Catalog",
+    "hasPost": false,
+    "thumbnail": "img/th/smallwoods-catalog-sm.jpg",
+    "largeImg": "img/smallwoods-catalog.jpg",
+    "tags": ["design, print"]
+  },
+  "isp-logos": {
+    "title": "Logo for ISP",
+    "hasPost": false,
+    "thumbnail": "img/th/isp-logo-sm.png",
+    "largeImg": "img/isp-logo.png",
+    "tags": ["logo design"]
+  },
+  "silversea-caviar-logos": {
+    "title": "Logos for Silversea Cruises",
+    "hasPost": false,
+    "thumbnail": "img/th/silversea-caviar-logo-sm.png",
+    "largeImg": "img/silversea-caviar-logo.png",
+    "tags": ["logo"]
+  },
+  "silversea-event-brochure": {
+    "title": "Silversea Brochure",
+    "hasPost": false,
+    "thumbnail": "img/th/silversea-brochure-sm.jpg",
+    "largeImg": "img/silversea-brochure.jpg",
+    "tags": ["design, print"]
+  },
+  "collette": {
+    "title": "Collette",
+    "hasPost": false,
+    "thumbnail": "img/bigcollette.gif",
+    "largeImg": "img/bigcollette.gif",
+    "tags": ["Crazy"]
+  }
+}

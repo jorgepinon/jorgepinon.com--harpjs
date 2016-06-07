@@ -1,0 +1,19 @@
+//   =MASTHEAD   ==================================================
+
+.masthead {
+	position: relative;
+	z-index: 100;
+	font-size: 1.1em;
+	margin-bottom: 2em;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.sitelogo {
+	margin: 0;
+	font-size: 1.2em;
+	padding: 10px;
+}
+.sitelogo a, .sitelogo a:visited {
+	text-align: left;
+}

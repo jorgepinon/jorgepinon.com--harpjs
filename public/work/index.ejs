@@ -1,0 +1,28 @@
+<h1>Samples of work</h1>
+<p class="lede">Click or tap any image to read about the project or see a larger image.</p>
+
+<ul class="cards">
+
+	<% for(var slug in public.work._data) { %>
+		<% var work = public.work._data[slug]; %>
+		<li class="card">
+
+			<figure>
+				<% if( work.hasPost == true ) { %>
+					<a href="/work/<%- slug %>.html" title="read about <%- work.title %>">
+						<img src="<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
+				<% } else { %>
+					<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="<%- work.largeImg %>" class="trigger-popup-img"></span>
+				<% }; %>
+				<figcaption>
+					<% if( work.hasPost == true ) { %>
+						<a href="/work/<%- slug %>.html"><%- work.title %></a>
+					<% } else { %>
+						<%- work.title %>
+					<% }; %>
+				</figcaption>
+			</figure>
+		</li>
+	<% }; %>
+
+</ul>

@@ -1,0 +1,52 @@
+<%
+	var posts = [];
+	for( slug in public.posts._data ) {
+		var post = public.posts._data[slug];
+		if( post.date && post.published !== false ) {
+			post.slug = slug;
+			posts.push(post);
+		}
+	}
+
+	// order posts by date into an array
+	var postsByDate = posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; });
+
+	// new array with just the first n posts
+	var latestPosts = postsByDate.slice(0, 3);
+
+	// new array without the first n posts
+	var nextBunch = postsByDate.slice(3, 8);
+
+%>
+
+<div class="row">
+
+	<div class="small-12 large-9 large-centered column">
+
+		<div class="row">
+
+			<div class="small-12 medium-9 column">
+
+				<% latestPosts.forEach( function(post) { %>
+					<div class="entry">
+						<%- partial(post.slug) %>
+					</div>
+				<% }); %>
+
+			</div>
+
+			<aside class="small-12 medium-3 column">
+				<h2>Other entries</h2>
+				<ul>
+					<% nextBunch.forEach( function(post) { %>
+						<li><a href="/posts/<%- post.slug %>.html"><%- post.title %></a> <br> <small><%- post.date %></small></li>
+					<% });%>
+				</ul>
+				<a href="archive">Archive</a>
+			</aside>
+
+		</div>
+
+	</div>
+
+</div>
