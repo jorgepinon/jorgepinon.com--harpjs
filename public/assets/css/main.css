@@ -35,6 +35,11 @@
   float: right;
 }
 
+.fit {
+  display: block;
+  width: 100%;
+}
+
 .help--block {
   display: block;
   margin-bottom: 0.5em;
@@ -106,7 +111,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
+  background-color: #f3f3f3;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -169,9 +174,12 @@ a:active, a:focus {
 }
 
 p {
-  margin: 0 0 1.5em;
-  max-width: 36em;
+  margin: 0;
   font-size: 1em;
+}
+
+p + p {
+  margin-top: 1.5em;
 }
 
 small {
@@ -181,6 +189,7 @@ small {
 h1, h2, h3, h4 {
   line-height: 1.2;
   margin: 0;
+  margin-top: 1.5em;
   font-family: inherit;
   text-rendering: optimizelegibility;
 }
@@ -205,20 +214,11 @@ h2 {
 
 h3, .gamma {
   font-size: 1.2em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.25em;
 }
 
 h4, .delta {
   font-size: 1em;
-  margin-bottom: 0.5em;
-}
-
-.welcome h1, .welcome h2, .welcome h3, .welcome h4 {
-  color: #C68A69;
-}
-
-.micro {
-  font-size: 0.875em;
 }
 
 hr {
@@ -226,13 +226,6 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #fff;
-}
-
-address {
-  display: block;
-  margin-bottom: 1em;
-  line-height: 1.3;
-  font-style: normal;
 }
 
 time, .datestamp, .dateyear {
@@ -277,29 +270,6 @@ ol {
 li {
   line-height: 1.4;
   margin-bottom: .5em;
-}
-
-dl {
-  margin-bottom: 1.5em;
-}
-
-dt, dd {
-  line-height: 1.5;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 0;
-}
-
-table {
-  max-width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: transparent;
 }
 
 .row {
@@ -781,7 +751,7 @@ footer[role="contentinfo"], .footer-push {
 [role="contentinfo"] {
   position: relative;
   padding: 1em 0 1.4;
-  background-color: #fcfcfc;
+  background-color: #f3f3f3;
   color: #444;
 }
 @media (min-width: 768px) {
@@ -814,50 +784,41 @@ footer[role="contentinfo"], .footer-push {
 }
 
 figure {
-  padding: 1em;
-  margin: 0 0 1em;
-  border: solid 1px #ddd;
-  background-color: #fff;
-  text-align: center;
-}
-figure.standalone {
-  display: block;
-  *zoom: 1;
-  margin: 0 auto;
-  border: 0;
-}
-figure.standalone:before, figure.standalone:after {
-  display: table;
-  content: "";
-}
-figure.standalone:after {
-  clear: both;
+  float: left;
+  padding: 0.25em;
+  margin: 1em;
+  max-width: 100%;
+  border: solid 1px #d2d2d2;
+  overflow: hidden;
 }
 figure img {
+  display: block;
   max-width: 100%;
-  display: inline-block;
-}
-figure figcaption {
-  clear: left;
-  font-size: 1em;
-  line-height: 1;
-  height: 3em;
-  padding: 0.5em;
-  text-align: center;
-  font-style: italic;
-}
-
-.worksample figure {
-  display: inline-block;
-}
-
-.artsample figure {
-  text-align: center;
-}
-.artsample figure img {
   margin: 0 auto;
 }
+figure.fit {
+  float: none;
+}
 
+figcaption {
+  padding: 0.5em 0.5em 1em;
+  text-align: center;
+}
+figcaption .title {
+  font-size: 1em;
+  margin: 0;
+}
+
+@media all and (min-width: 768px) {
+  figcaption {
+    font-size: 0.875em;
+  }
+}
+@media all and (min-width: 1024px) {
+  figcaption {
+    font-size: 0.75em;
+  }
+}
 .list--unstyled {
   margin: 0;
   padding: 0;
@@ -1113,32 +1074,38 @@ nav > a:hover {
     stroke-dashoffset: 0;
   }
 }
+.card {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  padding: 0.5em;
+  background: #fcfcfc;
+}
+
 .cards {
+  clear: left;
   list-style: none;
   margin-right: -1em;
   margin-left: -1em;
   overflow: hidden;
 }
 
-.card {
-  float: left;
-  margin-bottom: 1em;
+.cards .card {
+  margin-right: 0;
   margin-left: 1em;
-  padding: 0.5em;
-  background: #f3f3f3;
-  max-width: 284px;
   width: 42%;
-  overflow: hidden;
+  max-width: 20em;
 }
 
 @media all and (min-width: 768px) {
-  .card {
+  .cards .card {
     padding: 1em;
     width: 30%;
   }
 }
 @media all and (min-width: 1024px) {
-  .card {
+  .cards .card {
     width: 23%;
   }
 }

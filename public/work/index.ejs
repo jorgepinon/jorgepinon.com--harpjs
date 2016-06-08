@@ -5,21 +5,22 @@
 
 	<% for(var slug in public.work._data) { %>
 		<% var work = public.work._data[slug]; %>
-		<li class="card">
+		<li>
 
-			<figure>
+			<figure class="card">
 				<% if( work.hasPost == true ) { %>
-					<a href="/work/<%- slug %>.html" title="read about <%- work.title %>">
+					<a href="/work/<%- slug %>.html" title="read more">
 						<img src="<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
+					</a>
 				<% } else { %>
 					<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="<%- work.largeImg %>" class="trigger-popup-img"></span>
-				<% }; %>
+				<% } %>
 				<figcaption>
 					<% if( work.hasPost == true ) { %>
 						<a href="/work/<%- slug %>.html"><%- work.title %></a>
 					<% } else { %>
 						<%- work.title %>
-					<% }; %>
+					<% } %>
 				</figcaption>
 			</figure>
 		</li>

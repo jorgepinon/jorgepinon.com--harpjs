@@ -1,3 +1,3 @@
 # Personal site of Jorge Piñon
 
-Mostly for when I have to write something.
+Mostly as a showcase of work and for when I have to write something.

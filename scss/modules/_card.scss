@@ -1,27 +1,35 @@
+.card {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding: 0.5em;
+	background: $white;
+}
+
+// wrap in .cards container to control widths
 .cards {
+	clear: left;
 	list-style: none;
 	margin-right: -1em;
 	margin-left: -1em;
 	overflow: hidden;
 }
-.card {
-	float: left;
-	margin-bottom: 1em;
+.cards .card {
+	margin-right: 0;
 	margin-left: 1em;
-	padding: 0.5em;
-	background: #f3f3f3;
-	max-width: 284px;
 	width: 42%;
-	overflow: hidden;
+	max-width: 20em;
 }
+
 @media all and (min-width: 768px) {
-	.card {
+	.cards .card {
 		padding: 1em;
 		width: 30%;
 	}
 }
 @media all and (min-width: 1024px) {
-	.card {
+	.cards .card {
 		width: 23%;
 	}
 }

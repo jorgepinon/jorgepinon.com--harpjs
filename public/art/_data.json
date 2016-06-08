@@ -166,5 +166,110 @@
 		"imgFilename": "Perdido_29_5x41.jpg",
 		"tags": ["pastel"],
 		"date": "1997"
+	},
+	"poet-escapes": {
+		"title": "The Poet Escapes",
+		"description": "33.5 x 46 in., acrylic on canvas",
+		"imgFilename": "PoetEscapes33_5x46.jpg",
+		"tags": ["painting"],
+		"date": "1999"
+	},
+	"portrait-of-papo": {
+		"title": "Portrait of Papo",
+		"description": "26 x 34 in., acrylic on canvas",
+		"imgFilename": "PortraitPapo26x34.jpg",
+		"tags": ["painting"],
+		"date": "1999"
+	},
+	"rocking-chair": {
+		"title": "Rocking Chair",
+		"description": "22.5 x 30 in., chalk pastel on paper",
+		"imgFilename": "rockingchair_22_5x30.jpg",
+		"tags": ["pastel"],
+		"date": "1994"
+	},
+	"ruins-shadow": {
+		"title": "Ruins Shadow",
+		"description": "35.5 x 25 in., chalk pastel on paper",
+		"imgFilename": "ruins-shadow35_5x25.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"sala-olvidada": {
+		"title": "Sala Olvidada",
+		"description": "41 x 29.5 in., charcoal and chalk pastel on paper",
+		"imgFilename": "SalaOlvidada_41x29_5.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"senora": {
+		"title": "Señora",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "senora_30x42.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"street-rally": {
+		"title": "Street Rally",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "StreetRally_30x42.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"striped-skirt": {
+		"title": "Striped Skirt",
+		"description": "26 x 34 in., acrylic on canvas",
+		"imgFilename": "stripedskirt.jpg",
+		"tags": ["painting"],
+		"date": "2003"
+	},
+	"street-rally-before-hurricane": {
+		"title": "Street Rally Before Hurricane",
+		"description": "49 x 62 in., acrylic on canvas",
+		"imgFilename": "strtralley_hurric46x77.jpg",
+		"tags": ["painting"],
+		"date": "2003"
+	},
+	"the-muse": {
+		"title": "The Muse",
+		"description": "35 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "TheMuse_35x32.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"the-podeum": {
+		"title": "The Podeum",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "ThePodeum_30x42.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"untitled-girl": {
+		"title": "Untitled Girl",
+		"description": "30 x 42 in., charcoal and chalk pastel on paper",
+		"imgFilename": "Unt_Girl_30x42.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"viejo-rockingchair": {
+		"title": "Viejo with Rockingchair",
+		"description": "22 x 30 in., charcoal and chalk pastel on paper",
+		"imgFilename": "viejo_rockingchair_22x30.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
+	},
+	"viejo-rockingchair-collage": {
+		"title": "Viejo with Rockingchair",
+		"description": "30 x 42 in., charcoal, chalk pastel, and collage on paper",
+		"imgFilename": "viejo_rockingchair_coll.jpg",
+		"tags": ["pastel collage"],
+		"date": "1997"
+	},
+	"wash-hands": {
+		"title": "Wash Hands",
+		"description": "35.5 x 25 in., charcoal, chalk pastel, and collage on paper",
+		"imgFilename": "WashHands35_5x25.jpg",
+		"tags": ["pastel"],
+		"date": "1997"
 	}
 }
