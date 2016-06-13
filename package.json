@@ -1,0 +1,23 @@
+{
+  "name": "jorgepinon.com",
+  "version": "1.5.0",
+  "description": "Personal site. Mostly as a showcase of work and for when I have to write something.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgepinon/jorgepinon.com-harp.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "uglify-js": "^2.6.2",
+    "watch-run": "^1.2.4"
+  },
+  "scripts": {
+    "js-libs": "cat assets/libs/*.js > public/js/libs.js",
+    "js-plugins": "cat assets/plugins/*.js > public/js/plugins.js",
+    "js-bundle": "cat assets/js/libs/*.js assets/js/plugins/*.js assets/js/utilities.js assets/js/app.js > public/assets/js/bundle.js",
+    "js-bundle-min": "uglifyjs public/assets/js/bundle.js -o public/assets/js/bundle.min.js",
+    "build-js": "npm run js-bundle && npm run js-bundle-min",
+    "watch-js": "watch-run -p 'assets/js/**' npm run build-js"
+  }
+}

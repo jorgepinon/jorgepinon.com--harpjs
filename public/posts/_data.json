@@ -1,10 +1,18 @@
 {
+    "transcribing-mr-tambourine-man": {
+      "layout": "_entry",
+      "title": "Transcribing Mr. Tambourine Mane",
+      "summary": "But for the sky there are no fences facing",
+      "tags": ["Misc"],
+      "date": "2015-10-15",
+      "isPublished": true
+    },
     "aurora-if-i-were-a-bee": {
       "layout": "_entry",
       "title": "If I Were a Bee",
       "summary": "Aurora's bee-related homework writing",
       "tags": ["Misc"],
-      "date": "2014-07-30",
+      "date": "2014-7-30",
       "isPublished": true
     },
     "aurora-office-plan": {
@@ -12,7 +20,7 @@
       "title": "Plan",
       "summary": "A note found after a visit by Aurora to my office one day",
       "tags": ["Misc"],
-      "date": "2014-03-04",
+      "date": "2014-3-4",
       "isPublished": true
     },
     "overcast-app": {
@@ -42,7 +50,7 @@
   "app-dot-net": {
     "layout": "_entry",
     "title": "App Dot Net in Maintenance Mode",
-    "summary": "There's still a chance",
+    "summary": "Maybe there's chance",
     "tags": ["UX"],
     "date": "2014-05-09",
     "isPublished": true

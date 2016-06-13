@@ -25,11 +25,11 @@ $constrained-width : 1200px !default;
 }
 
 .entry {
+	overflow: hidden;
 	padding-bottom: 2em;
 	margin: 0 auto 2em;
 	max-width: 48em;
 }
-
 
 [role="contentinfo"] {
 	position: relative;

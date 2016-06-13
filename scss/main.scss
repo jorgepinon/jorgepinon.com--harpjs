@@ -13,6 +13,7 @@
 @import "modules/navigation";
 @import "modules/icons";
 @import "modules/card";
+@import "modules/mfp";
 
 
 .tag {
@@ -24,7 +25,8 @@
 	color: rgba(255,255,255,0.9);
 	padding: 0.5em 1em;
 	position: absolute;
-	bottom: 0;
+	bottom: $footer-height;
+;
 	left: 0;
 	line-height: 1.2;
 	font-size: 14px;

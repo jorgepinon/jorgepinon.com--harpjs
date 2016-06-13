@@ -2,6 +2,9 @@
 	"rss": {
 		"layout": false
 	},
+	"feed": {
+		"layout": false
+	},
 	"sitemap": {
 		"layout": false
 	}

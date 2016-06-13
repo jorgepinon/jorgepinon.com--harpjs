@@ -1,6 +1,6 @@
 figure {
 	float: left;
-	padding: 0.25em;
+	padding: 1em;
 	margin: 1em;
 	max-width: 100%;
 	border: solid 1px $light-grey;
@@ -14,11 +14,13 @@ figure {
 
 	&.fit {
 		float: none;
+		border-right: 0;
+		border-left: 0;
 	}
 }
 
 figcaption {
-	padding: 0.5em 0.5em 1em;
+	padding: 0.5em 0.5em;
 	text-align: center;
 
 	.title {
@@ -38,4 +40,3 @@ figcaption {
 		font-size: 0.75em;
 	}
 }
-

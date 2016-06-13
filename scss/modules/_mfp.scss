@@ -1,0 +1,416 @@
+// Default Settings
+
+$overlay-bg: 						$overlay-bg !default;
+$overlay-opacity:					$overlay-opacity !default;
+$shadow:							$box-shadow !default; // shadow on image
+
+$z-index-base:						1040 !default; // Base z-index of popup
+$include-arrows:					true !default; // include styles for nav arrows
+$controls-opacity:					0.65 !default;
+$controls-color:					#FFF !default;
+$close-icon-size:					44px !default;
+$close-font-size:					28px !default;
+$inner-close-icon-color:			#333 !default;
+$controls-text-color:				#CCC !default; // Color of preloader and "1 of X" indicator
+$controls-text-color-hover:			#FFF !default;
+$arrow-width:						40px !default;
+$arrow-height:						40px !default;
+
+
+// Image-type options
+$include-image-type:              false !default;
+$include-mobile-layout-for-image: false !default; // Removes paddings from top and bottom
+
+// Image caption options
+$caption-title-color:             #F3F3F3 !default;
+$caption-subtitle-color:          #BDBDBD !default;
+
+// A11y
+$use-visuallyhidden:              false !default; // Hide content from browsers, but make it available for screen readers
+
+
+
+// styles
+
+// Transluscent overlay
+.mfp-bg {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: $z-index-base + 2;
+	overflow: hidden;
+	position: fixed;
+
+	background: $overlay-bg;
+	opacity: $overlay-opacity;
+
+	transition: all 0.2s;
+}
+
+// Wrapper for popup
+.mfp-wrap {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: $z-index-base + 3;
+	position: fixed;
+	outline: none !important;
+	-webkit-backface-visibility: hidden; // fixes webkit bug that can cause "false" scrollbar
+}
+
+// Root container
+.mfp-container {
+	text-align: center;
+	//position: absolute;
+	width: 90%;
+	max-width: 800px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	// -webkit-box-sizing: border-box;
+	// -moz-box-sizing: border-box;
+	// box-sizing: border-box;
+
+	//cd mods
+	position: relative;
+	margin: 0 auto;
+
+}
+
+// Vertical centerer helper
+.mfp-container {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+.mfp-figure figure {
+	padding: 2em;
+	background-color: $white;
+}
+// Remove vertical centering when popup has class `mfp-align-top`
+.mfp-align-top {
+	.mfp-container {
+		&:before {
+			display: none;
+		}
+	}
+
+	// custom animation to slide in from top (class set on init)
+	.mfp-with-anim {
+		-webkit-transform: translateY(-100px);
+		transform: translateY(-100px);
+	}
+	&.mfp-ready .mfp-with-anim {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	&.mfp-removing .mfp-with-anim {
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+	}
+
+}
+
+// Popup content holder
+.mfp-content {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: left;
+	z-index: $z-index-base + 5;
+
+	//cd mods
+	min-height: $arrow-height + $close-icon-size * 2;
+
+	.mfp-gallery & .sheet {
+		// padding-left: $arrow-width;
+		// padding-right: $arrow-width;
+		padding-bottom: $arrow-height;
+		//background-color: $page-bg;
+	}
+
+}
+
+.mfp-inline-holder,
+.mfp-ajax-holder {
+	.mfp-content {
+		width: 100%;
+		cursor: auto;
+	}
+}
+
+// Cursors
+.mfp-ajax-cur {
+	cursor: progress;
+}
+.mfp-auto-cursor {
+  .mfp-content {
+    cursor: auto;
+  }
+}
+
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+	-webkit-user-select:none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+// Hide the image during the loading
+.mfp-loading {
+	&.mfp-figure {
+		display: none;
+	}
+}
+
+@if $use-visuallyhidden {
+	.mfp-hide {
+		@include visuallyhidden();
+	}
+} @else {
+	.mfp-hide {
+		display: none !important;
+	}
+}
+
+
+////////////////////////
+// States
+////////////////////////
+
+// Preloader and text that displays error messages
+.mfp-preloader {
+	color: $controls-text-color;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	text-align: center;
+	margin-top: -0.8em;
+	left: 8px;
+	right: 8px;
+	z-index: $z-index-base + 4;
+	a {
+		color: $controls-text-color;
+		&:hover {
+			color: $controls-text-color-hover;
+		}
+	}
+}
+
+// Hide preloader when content successfully loaded
+.mfp-s-ready {
+	.mfp-preloader {
+		display: none;
+	}
+}
+
+// Hide content when it was not loaded
+.mfp-s-error {
+	.mfp-content {
+		display: none;
+	}
+}
+
+.mfp-ready.mfp-bg {
+	opacity: $overlay-opacity;
+}
+.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+////////////////////////
+// Optional elements
+////////////////////////
+
+// CSS-reset for buttons
+button {
+	&.mfp-close,
+	&.mfp-arrow {
+		overflow: visible;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		-webkit-appearance: none;
+		display: block;
+		outline: none;
+		padding: 0;
+		z-index: $z-index-base + 6;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	&::-moz-focus-inner {
+		padding: 0;
+		border: 0
+	}
+}
+
+.forward-only button.mfp-arrow-left {
+	display: none;
+}
+.first-item .mfp-arrow-left,
+.last-item .mfp-arrow-right {
+	display: none;
+}
+
+
+// Close icon
+.mfp-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: $close-icon-size;
+	height: $close-icon-size;
+	line-height: $close-icon-size;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	opacity: $controls-opacity;
+	color: $controls-color;
+	font-style: normal;
+	font-weight: normal;
+	font-size: $close-font-size;
+	font-family: Arial, Baskerville, monospace;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+.mfp-close-btn-in {
+	.mfp-close {
+		color: $inner-close-icon-color;
+	}
+}
+.mfp-image-holder {
+	.mfp-close {
+		color: $controls-color;
+		right: -6px;
+		text-align: right;
+		padding-right: 6px;
+		width: 100%;
+	}
+}
+
+// "1 of X" counter
+.mfp-counter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: $controls-text-color;
+	font-size: 12;
+	line-height: 18px;
+}
+
+// Navigation arrows
+@if $include-arrows {
+	.mfp-arrow {
+		position: absolute;
+		opacity: $controls-opacity;
+		margin: 0;
+		//top: 50%;
+		bottom: 0;
+		margin-top: -($arrow-height/2);
+		padding: 0;
+		width: $arrow-width;
+		height: $arrow-height;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		&:active {
+			margin-top: -($arrow-height/2);
+		}
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+		&:before,
+		&:after,
+			.mfp-b,
+			.mfp-a {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			// margin-top: 35px;
+			// margin-left: 35px;
+			border: medium inset transparent;
+		}
+
+		&:after,
+		.mfp-a {
+			border-top-width: 9px;
+			border-bottom-width: 9px;
+			top:8px;
+		}
+
+		&:before,
+		.mfp-b {
+			border-top-width: 14px;
+			border-bottom-width: 14px;
+		}
+	}
+
+	.mfp-arrow-left {
+		left: 0;
+
+		&:before,
+		.mfp-b {
+			margin-left: 25px;
+			border-right: 18px solid #999;
+		}
+	}
+
+	.mfp-arrow-right {
+		right: 0;
+
+		&:before,
+			.mfp-b {
+			border-left: 18px solid #999;
+		}
+	}
+
+}
+
+// animated (by default)
+.mfp-with-anim {
+	opacity: 0;
+	transition: all .3s;
+}
+.mfp-ready .mfp-with-anim {
+	opacity: 1;
+}
+.mfp-removing .mfp-with-anim {
+	opacity: 0;
+}
+
+
+// Scale navigation arrows and reduce padding from sides
+@include respond-max(900px) {
+	.mfp-arrow {
+		-webkit-transform: scale(0.75);
+		transform: scale(0.75);
+	}
+	.mfp-arrow-left {
+		-webkit-transform-origin: 0;
+		transform-origin: 0;
+	}
+	.mfp-arrow-right {
+		-webkit-transform-origin: 100%;
+		transform-origin: 100%;
+	}
+}

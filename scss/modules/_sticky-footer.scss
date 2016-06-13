@@ -14,3 +14,8 @@ $footer-height : 100px;
 footer[role="contentinfo"], .footer-push {
 	height: $footer-height;
 }
+
+footer[role="contentinfo"] {
+	position: relative;
+	padding-top: 50px;
+}

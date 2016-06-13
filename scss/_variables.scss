@@ -53,8 +53,8 @@ $secondary-color	: #B53D19;
 $border-color    	: $light-grey;
 $border-width    	: 1px;
 $border-style   	: solid;
-$overlay-bg			: rgb(23,20,43);
-$overlay-color		: $light-grey;
+$overlay-bg			: black;
+$overlay-opacity	: 0.7;
 
 $link-color 			: #6b985f;
 $link-color-visited		: darken($link-color, 10);
@@ -105,3 +105,23 @@ $breakpoint-medium		: 768px !default; 	// 768/16 = 48em
 $breakpoint-large		: 1024px !default; 	// 1024//16 = 64em
 $breakpoint-xl			: 1280px !default; 	// 1280/16 = 80em
 $breakpoint-xxl			: 1920px !default; 	// 1920/16 = 120em
+
+
+////////////////////////////
+// Compass overrides
+////////////////////////////
+
+// shadows (compass CSS3)
+////////////////////////////
+
+$default-box-shadow-color		: rgba(0, 0, 0, 0.25);
+$default-box-shadow-h-offset	: 0;
+$default-box-shadow-v-offset	: 1px;
+$default-box-shadow-blur		: 3px;
+$default-box-shadow-spread		: false;
+$default-box-shadow-inset		: false;
+
+$box-shadow   : $default-box-shadow-h-offset
+				$default-box-shadow-v-offset
+				$default-box-shadow-blur
+				$default-box-shadow-color;
