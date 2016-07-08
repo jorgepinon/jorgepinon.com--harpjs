@@ -17,7 +17,7 @@
 
 	<% postsByDate.forEach( function(post) { %>
 		<li>
-			<h3 class="post-title"><a href="<%- post.slug %>"><%- post.title %></a></h3>
+			<h3 class="post-title"><a href="<%- post.slug %>.html"><%- post.title %></a></h3>
 			<div><%- post.summary %></div>
 			<time class="post-date" datetime="<%- new Date(post.date) %>"><%- post.date %></time>
 		</li>

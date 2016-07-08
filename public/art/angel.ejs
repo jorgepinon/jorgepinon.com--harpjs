@@ -1,7 +1,41 @@
-<figure>
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "VisualArtwork",
+      "name": "Angel",
+      "image": "http://www.jorgepinon.com/artworks/Angel51_5x57_5.jpg",
+      "description": "The painting shows a pipe. Below it, Magritte...",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Jorge Piñon"
+        }
+      ],
+      "width": [
+        {
+          "@type": "Distance",
+          "name": "51.5 in."
+        }
+      ],
+      "height": [
+        {
+          "@type": "Distance",
+          "name": "57.5 in."
+        }
+      ],
+      "artMedium": "acrylic",
+      "artworkSurface": "canvas"
+    }
+</script>
 
-	<img src="artworks/Angel51_5x57_5.jpg" alt="Angel51_5x57_5">
+<figure itemscope itemtype="http://schema.org/VisualArtwork">
 
-	<figcaption>“Angel”. 51.5 x 57 inches. Acrylic on canvas</figcaption>
+	<img itemprop="image" src="artworks/Angel51_5x57_5.jpg" alt="Angel51_5x57_5">
+
+	<figcaption>
+		<b class="title" itemprop="name">Angel</b>.
+		<span class="dimentions"><span itemprop="width" itemscope itemtype="http://schema.org/Distance">51.5 in.</span> x <span itemprop="height" itemscope itemtype="http://schema.org/Distance">57.5 in.</span></span>
+		<span class="materials"><span itemprop="artMedium">Acrylic</span> on <span itemprop="artworkSurface">canvas</span></span>
+	</figcaption>
 
 </figure>

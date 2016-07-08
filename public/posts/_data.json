@@ -1,9 +1,17 @@
 {
+    "thoughts-on-javascript-frameworks": {
+      "layout": "_entry",
+      "title": "Thoughts on Javascript Frameworks",
+      "summary": "Any way to build web sites and apps should include web standards at its core.",
+      "tags": ["Javascript"],
+      "date": "2016-07-06",
+      "isPublished": true
+    },
     "transcribing-mr-tambourine-man": {
       "layout": "_entry",
       "title": "Transcribing Mr. Tambourine Mane",
       "summary": "But for the sky there are no fences facing",
-      "tags": ["Misc"],
+      "tags": ["misc"],
       "date": "2015-10-15",
       "isPublished": true
     },
@@ -11,7 +19,7 @@
       "layout": "_entry",
       "title": "If I Were a Bee",
       "summary": "Aurora's bee-related homework writing",
-      "tags": ["Misc"],
+      "tags": ["misc"],
       "date": "2014-7-30",
       "isPublished": true
     },
@@ -19,7 +27,7 @@
       "layout": "_entry",
       "title": "Plan",
       "summary": "A note found after a visit by Aurora to my office one day",
-      "tags": ["Misc"],
+      "tags": ["misc"],
       "date": "2014-3-4",
       "isPublished": true
     },
@@ -27,7 +35,7 @@
       "layout": "_entry",
       "title": "Overcast app",
       "summary": "",
-      "tags": ["Misc"],
+      "tags": ["development"],
       "date": "2014-07-24",
       "isPublished": true
     },
@@ -43,7 +51,7 @@
     "layout": "_entry",
     "title": "The Munsell Color Wheel",
     "summary": "",
-    "tags": ["Misc"],
+    "tags": ["design"],
     "date": "2014-05-14",
     "isPublished": true
   },
@@ -51,7 +59,7 @@
     "layout": "_entry",
     "title": "App Dot Net in Maintenance Mode",
     "summary": "Maybe there's chance",
-    "tags": ["UX"],
+    "tags": ["misc"],
     "date": "2014-05-09",
     "isPublished": true
   },
@@ -67,7 +75,7 @@
     "layout": "_entry",
     "title": "Flat is fine, but legible is better",
     "summary": "Legibility and accessibility still need to be part of your flat design.",
-    "tags": ["Design","Accessibility"],
+    "tags": ["design","accessibility"],
     "date": "2014-02-03",
     "isPublished": true
   },
@@ -114,14 +122,14 @@
   "a-new-design-layer": {
     "layout": "_entry",
     "title": "Proposal for a new CSS design layer",
-    "tags": ["Design, CSS"],
+    "tags": ["design, CSS"],
     "date": "2013-01-10",
     "isPublished": true
   },
   "why-i-cant-use-photoshop": {
     "layout": "_entry",
     "title": "Why I can’t switch to Photoshop for icons and other UI assets",
-    "tags": ["Design, UX"],
+    "tags": ["design, UX"],
     "date": "2012-09-09",
     "isPublished": true
   },
@@ -142,7 +150,7 @@
   "no-one-wants-to-make-lists-that-way": {
     "layout": "_entry",
     "title": "No one wants to make lists (that way)",
-    "tags": ["ux"],
+    "tags": ["UX"],
     "date": "2012-02-12",
     "isPublished": true
   },

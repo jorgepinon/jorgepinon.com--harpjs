@@ -40,9 +40,9 @@ $dark-grey 		: #282B35;
 $text			: #444;
 $grey 			: #555963;
 $light-grey 	: #d2d2d2;
-$white 			: #fcfcfc;
+$white 			: #fafafa;
 
-$body-bg 			: #f3f3f3;
+$body-bg 			: $white;
 $body-color 		: $text;
 $page-bg 			: $body-bg;
 $page-color 		: $body-color;
@@ -56,7 +56,7 @@ $border-style   	: solid;
 $overlay-bg			: black;
 $overlay-opacity	: 0.7;
 
-$link-color 			: #6b985f;
+$link-color 			: #1BA39C;
 $link-color-visited		: darken($link-color, 10);
 
 $alert-bg 		: #dae5e5;

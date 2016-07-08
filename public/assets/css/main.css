@@ -106,7 +106,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -134,10 +134,10 @@ iframe {
 
 a {
   text-decoration: none;
-  color: #6b985f;
+  color: #1BA39C;
 }
 a:visited {
-  color: #55794b;
+  color: #147772;
 }
 a:hover {
   text-decoration: underline;
@@ -188,7 +188,6 @@ small {
 h1, h2, h3, h4 {
   line-height: 1.2;
   margin: 0;
-  margin-top: 1.5em;
   font-family: inherit;
   text-rendering: optimizelegibility;
 }
@@ -756,7 +755,7 @@ footer[role="contentinfo"] {
 [role="contentinfo"] {
   position: relative;
   padding: 1em 0 1.4;
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   color: #444;
 }
 @media (min-width: 768px) {
@@ -810,9 +809,11 @@ figure.fit {
 figcaption {
   padding: 0.5em 0.5em;
   text-align: center;
+  color: #888;
 }
 figcaption .title {
   font-size: 1em;
+  color: #444;
   margin: 0;
 }
 
@@ -890,8 +891,8 @@ button:focus {
   overflow: hidden;
   border-radius: 40px;
   cursor: pointer;
-  background-color: #62A01D;
-  color: #f6faf1;
+  background-color: #EAF2BE;
+  color: #333;
   border: 0;
   outline: 0;
   line-height: 40px;
@@ -905,7 +906,7 @@ button:focus {
 .btn:hover, .btn:focus, .btn:active, .btn:visited:hover, .btn:visited:focus, .btn:visited:active, .btn--inverse:hover, .btn--inverse:focus, .btn--inverse:active, .btn--inverse:visited:hover, .btn--inverse:visited:focus, .btn--inverse:visited:active {
   text-decoration: none;
   outline: 0;
-  background-color: #558a19;
+  background-color: #e3eea9;
 }
 .btn:active, .btn:visited:active, .btn--inverse:active, .btn--inverse:visited:active {
   top: 1px;
@@ -930,14 +931,14 @@ button:focus {
 
 .btn--link {
   background: none;
-  color: #6b985f;
+  color: #1BA39C;
   cursor: pointer;
   border: 0;
 }
 
 .btn--add, .btn--add:visited, .btn--add:focus {
   background-color: #7BBD11;
-  color: #fcfcfc;
+  color: #fafafa;
 }
 .btn--add:focus, .btn--add:active, .btn--add:visited:focus, .btn--add:visited:active, .btn--add:focus:focus, .btn--add:focus:active {
   background-color: #6ca60f;
@@ -975,13 +976,13 @@ button:focus {
 
 .btn--clear {
   background-color: transparent;
-  border: solid 1px #fcfcfc;
-  color: #fcfcfc;
+  border: solid 1px #fafafa;
+  color: #fafafa;
 }
 
 .btn--inverse, .btn--inverse:visited, .btn--inverse:focus, .btn--inverse:hover, .btn--inverse:active {
   background-color: transparent;
-  color: #fcfcfc;
+  color: #fafafa;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
 }
 .btn--inverse:active, .btn--inverse:hover, .btn--inverse:visited:active, .btn--inverse:visited:hover, .btn--inverse:focus:active, .btn--inverse:focus:hover, .btn--inverse:hover:active, .btn--inverse:hover:hover, .btn--inverse:active:active, .btn--inverse:active:hover {
@@ -1031,8 +1032,8 @@ nav > a:hover {
 }
 
 .nav--block > a {
-  background-color: #6b985f;
-  color: white;
+  background-color: #EAF2BE;
+  color: #333;
 }
 
 .stroke {
@@ -1087,7 +1088,7 @@ nav > a:hover {
   margin-bottom: 1em;
   overflow: hidden;
   padding: 0.5em;
-  background: #fcfcfc;
+  background: #fafafa;
 }
 
 .cards {
@@ -1160,7 +1161,7 @@ nav > a:hover {
 
 .mfp-figure figure {
   padding: 2em;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
 }
 
 .mfp-align-top .mfp-container:before {
