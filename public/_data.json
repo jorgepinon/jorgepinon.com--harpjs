@@ -1,4 +1,13 @@
 {
+	"index": {
+		"title": "Personal site, with opinions, of Jorge Piñon (fine, Pinon)"
+	},
+	"about": {
+		"title": "About Jorgerino!"
+	},
+	"404": {
+		"title": "Missing!"
+	},
 	"rss": {
 		"layout": false
 	},

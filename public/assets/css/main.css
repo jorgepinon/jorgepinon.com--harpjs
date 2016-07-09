@@ -108,8 +108,8 @@ body {
   padding: 0;
   background-color: #fafafa;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.8;
   color: #444;
 }
 
@@ -266,7 +266,7 @@ ol {
 }
 
 li {
-  line-height: 1.4;
+  line-height: 1.6;
   margin-bottom: .5em;
 }
 
@@ -754,7 +754,7 @@ footer[role="contentinfo"] {
 
 [role="contentinfo"] {
   position: relative;
-  padding: 1em 0 1.4;
+  padding: 1em 0 1.6;
   background-color: #fafafa;
   color: #444;
 }
