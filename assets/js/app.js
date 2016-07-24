@@ -11,7 +11,7 @@ $(function() {
 	$('.trigger-popup-img').magnificPopup({
 		removalDelay: 200,
 		midClick: true,
-		type: 'image'
+		type: 'inline'
 	});
 
 	$('.trigger-close-popup').on('click',function(){ $.magnificPopup.close(); });

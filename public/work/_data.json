@@ -4,6 +4,7 @@
     "hasPost": true,
     "thumbnail": "img/th/choose_website_homepage-sm.jpg",
     "largeImg": "img/choose_website_homepage.jpg",
+    "caption": "The goal for ChooseDigital.com I set out to create: present the company as experts in digital media, awards incentives, and the company’s services as easily integrated into large enterprise portal-style marketplace sies yet with a modern aesthetic. Easy, right?",
     "tags": ["Project Lead","css", "javascript", "html", "cms"]
   },
   "avaya-rewards-site": {
@@ -18,6 +19,7 @@
     "hasPost": false,
     "thumbnail": "img/th/prologic-homepage-sm.jpg",
     "largeImg": "img/prologic-homepage-full.jpg",
+    "caption": "Prologic wanted a fast, straightforward brochure-style site that would appeal to large, traditional corporate IT departments. Make it blue!",
     "tags": ["web design", "cms","css", "html", "javascript"]
   },
   "grassroots-events": {
@@ -41,25 +43,27 @@
     "largeImg": "img/hprewards_home_lg.jpg",
     "tags": ["Project Lead","css", "html", "javascript"]
   },
+  "grizzlies-gametime": {
+    "title": "Memphis Grizzlies Gametime",
+    "hasPost": true,
+    "thumbnail": "img/th/grizzgametime-sm.jpg",
+    "largeImg": "img/grizzgametime_detail.jpg",
+    "tags": ["Project Lead","css", "html", "javascript"]
+  },
   "rewards-network-website": {
     "title": "Rewards Network microsite",
     "hasPost": false,
     "thumbnail": "img/th/rndining-sm.jpg",
     "largeImg": "img/rndiningsite-detail.jpg",
+    "caption": "I presented visual ideas to the client intentionally in contrast to what was their usual style of tiny stock images and heavy blocks of text. A lot of text editing iterations simplified the message and allowed the design to breathe.",
     "tags": ["web design","css", "html"]
-  },
-  "grizzlies-gametime": {
-    "title": "Grizzlies Gametime",
-    "hasPost": true,
-    "thumbnail": "img/th/grizzgametime-sm.jpg",
-    "largeImg": "img/grizzgametime_detail.jpg",
-    "tags": ["Project Lead","css", "html", "javascript"]
   },
   "international-paper": {
     "title": "International Paper - Sustainability",
     "hasPost": false,
     "thumbnail": "img/th/ip_web-sm.jpg",
     "largeImg": "img/ip_web_detail.jpg",
+    "caption": "This was a very fast little project that I got behind to help IP create an outlet for their sustainability message. I was a bit intimidated to be working for such a large company, not knowing what their expectations were and working completely without branding guidelines.",
     "tags": ["web design","css", "html", "javascript"]
   },
   "humane-society-of-memphis": {
@@ -74,6 +78,7 @@
     "hasPost": false,
     "thumbnail": "img/th/smallwoods-catalog-sm.jpg",
     "largeImg": "img/smallwoods-catalog.jpg",
+    "caption": "A series of printed catalogs I art directed and designed, and for which I oversaw press production. Smallwoods is a boutique store that outfits staff and officers throughout the ship and yacht industries.",
     "tags": ["design, print"]
   },
   "isp-logos": {
@@ -81,6 +86,7 @@
     "hasPost": false,
     "thumbnail": "img/th/isp-logo-sm.png",
     "largeImg": "img/isp-logo.png",
+    "caption": "Logo design and corporate collateral for International Shipping Partners (ISP). I suggested a simple bold shape to differentiate their logo as much as possible from competitors, and to ensure that it worked well when faxed. What I learned more than anything was how to pitch design ideas to a meeting full of people to which the process of design was completely foreign.",
     "tags": ["logo design"]
   },
   "silversea-caviar-logos": {

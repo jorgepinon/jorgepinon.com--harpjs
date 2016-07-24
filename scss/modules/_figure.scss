@@ -1,7 +1,6 @@
 figure {
-	float: left;
 	padding: 1em;
-	margin: 1em;
+	margin: 0 0 1em;
 	max-width: 100%;
 	border: solid 1px $light-grey;
 	overflow: hidden;
@@ -23,6 +22,8 @@ figcaption {
 	padding: 0.5em 0.5em;
 	text-align: center;
 	color: #888;
+	max-width: 38em;
+	margin: 0 auto;
 
 	.title {
 		font-size: 1em;

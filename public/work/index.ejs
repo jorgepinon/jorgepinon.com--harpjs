@@ -13,7 +13,7 @@
 						<img src="<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
 					</a>
 				<% } else { %>
-					<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="<%- work.largeImg %>" class="trigger-popup-img"></span>
+					<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img"></span>
 				<% } %>
 				<figcaption>
 					<% if( work.hasPost == true ) { %>
@@ -23,6 +23,15 @@
 					<% } %>
 				</figcaption>
 			</figure>
+
+			<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
+				<figure>
+					<img src="<%- work.largeImg %>" class="trigger-popup-img">
+					<% if ( work.caption ) { %>
+					<figcaption><%- work.caption %></figcaption>
+					<% } %>
+				</figure>
+			</div>
 		</li>
 	<% }; %>
 
