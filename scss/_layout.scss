@@ -24,6 +24,13 @@ $constrained-width : 1200px !default;
 	position: relative;
 }
 
+.page {
+	background-color: rgba(250, 250, 250, 0.9);
+	padding: 1em;
+	@media (min-width: 768px) {
+		padding: 2em;
+	}
+}
 .entry {
 	overflow: hidden;
 	padding-bottom: 2em;

@@ -9,8 +9,8 @@ $include-arrows:					true !default; // include styles for nav arrows
 $controls-opacity:					0.65 !default;
 $controls-color:					#FFF !default;
 $close-icon-size:					44px !default;
-$close-font-size:					28px !default;
-$inner-close-icon-color:			#333 !default;
+$close-font-size:					44px !default;
+$inner-close-icon-color:			#eee !default;
 $controls-text-color:				#CCC !default; // Color of preloader and "1 of X" indicator
 $controls-text-color-hover:			#FFF !default;
 $arrow-width:						40px !default;
@@ -89,10 +89,6 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 	}
 }
 
-.mfp-figure figure {
-	padding: 2em;
-	background-color: $white;
-}
 // Remove vertical centering when popup has class `mfp-align-top`
 .mfp-align-top {
 	.mfp-container {
@@ -130,12 +126,16 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 	min-height: $arrow-height + $close-icon-size * 2;
 
 	.mfp-gallery & .sheet {
-		// padding-left: $arrow-width;
-		// padding-right: $arrow-width;
 		padding-bottom: $arrow-height;
-		//background-color: $page-bg;
 	}
 
+	figure {
+		padding: 2em;
+		background-color: $white;
+	}
+	figcaption {
+		text-align: left;
+	}
 }
 
 .mfp-inline-holder,

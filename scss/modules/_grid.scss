@@ -12,7 +12,7 @@
 .row:after {
 	clear: both;
 }
-.row .row {
+.row > .row {
 	width: auto;
 	margin-left: -1em;
 	margin-right: -1em;
@@ -45,13 +45,13 @@
 .column.small-uncentered {
 	margin-left: 0;
 	margin-right: 0;
-	float: left; 
+	float: left;
 }
 .column.small-centered:last-child {
-	float: none; 
+	float: none;
 }
 .column.small-uncentered:last-child {
-	float: left; 
+	float: left;
 }
 
 
@@ -142,18 +142,18 @@
 .column.small-centered {
 	margin-left: auto;
 	margin-right: auto;
-	float: none; 
+	float: none;
 }
 .column.small-uncentered {
 	margin-left: 0;
 	margin-right: 0;
-	float: left; 
+	float: left;
 }
 .column.small-centered:last-child {
-	float: none; 
+	float: none;
 }
 .column.small-uncentered:last-child {
-	float: left; 
+	float: left;
 }
 
 
@@ -176,13 +176,13 @@
 	.column.medium-uncentered {
 		margin-left: 0;
 		margin-right: 0;
-		float: left; 
+		float: left;
 	}
 	.column.medium-centered:last-child {
-		float: none; 
+		float: none;
 	}
 	.column.medium-uncentered:last-child {
-		float: left; 
+		float: left;
 	}
 
 	.medium-1 {
@@ -262,18 +262,18 @@
 	.column.medium-centered {
 		margin-left: auto;
 		margin-right: auto;
-		float: none; 
+		float: none;
 	}
 	.column.medium-uncentered {
 		margin-left: 0;
 		margin-right: 0;
-		float: left; 
+		float: left;
 	}
 	.column.medium-centered:last-child {
-		float: none; 
+		float: none;
 	}
 	.column.medium-uncentered:last-child {
-		float: left; 
+		float: left;
 	}
 
 }
@@ -287,13 +287,13 @@
 	.column.large-uncentered {
 		margin-left: 0;
 		margin-right: 0;
-		float: left; 
+		float: left;
 	}
 	.column.large-centered:last-child {
-		float: none; 
+		float: none;
 	}
 	.column.large-uncentered:last-child {
-		float: left; 
+		float: left;
 	}
 
 

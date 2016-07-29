@@ -1,0 +1,64 @@
+<div class="entry">
+
+	<h1>Choose Digital Apps <span class="dateyear">2013-2016</span></h1>
+
+	<%- partial('_tags') %>
+
+
+	<p>Choose Digital was a minimally-funded startup and consequently a great opportunity for me to build up all kids of web dev skills: product concept and building, UX and wireframing, front end coding, pattern library, UI writing, etc. </p>
+
+	<p>Our primary product was a digital media e-commerce store using reward program currencies (“points”, “miles”, etc). It started with a lot of backend infrastructure and cloud services, most of which was handled by one lead developer working remotely. We also decided to go with a brand new MVC web framework called <i><a href="https://www.playframework.com/">Play!</a></i>.</p>
+
+	<p>My role was UX, documentation, design, and frontend development. We later added a second frontend designer and a third developer and with that team we built some pretty impressive stuff, if I may say. </p>
+
+	<p>Our first app’s frontend code was a mess (which we eventually cleaned up), but the process taught me something very useful. The only good way to build out the design of a large app — with many user flows, many application states, and a large template structure — is to create a UI page filled with basic semantic html elements and static versions of all modules and variations, and have that page load the <i>same CSS and javascript that the customer will get</i>. With a repository of UI modules like that, you have a single url to visually test most of the app’s design. </p>
+
+	<p>It turns out others had been working on this idea of a UI module library. The excellent <a href="http://patternlab.io/">Pattern Lab</a> was a standout example built by a community of developers.</p>
+
+	<p>We organized our CSS into modules using Compass for some mixins and functions. Our roadmap had us building a lot of sites in a short time, so we researched and found a great technique for creating core modules with default values and overriding those with theme skins. </p>
+
+	<div class="row">
+
+		<figure>
+			<img src="img/cpy-header-books-lg.jpg" alt="screenshot of Choose Digital books header">
+			<figcaption>
+				<p>eBooks index header</p>
+			</figcaption>
+		</figure>
+
+	</div>
+
+	<p>One of my inspirations at the time was a web app called Rdio. Rdio was an early music streaming service that stood out from the others in that it was a web app first and foremost, and a really good one. Their ultra clean design and simple clear UX was exactly what I thought a digital music, ebooks, and video web store needed, allowing the visual focus to be on the cover artwork and keeping the design almost invisible. </p>
+
+	<div class="row">
+
+		<figure>
+			<img src="img/cpy-orders-list-lg.jpg" alt="screenshot of detail of Choose Digital Order History page">
+			<figcaption>
+				<p>Typography for Order History view</p>
+			</figcaption>
+		</figure>
+
+	</div>
+
+	<br>
+
+	<div class="row">
+
+		<figure>
+			<img src="img/cpy-popup-ux-lg.jpg" alt="screenshot of detail of Choose Digital popup confirmation">
+			<figcaption>
+				<p>Popup for purchase confirmation</p>
+			</figcaption>
+		</figure>
+
+	</div>
+
+	<p>Building upon that idea of a themeable UI module library, we also stripped the modules into their barest components and styles so that we could reuse them in other apps as needed. Our basic modules were things like alerts, cards, masthead, drawers, dropdowns, popups, and <a href="/posts/radio-button-buttons.html">tap-friendly radio buttons</a>. </p>
+
+	<p>I still use those modules in almost anything I build, from a tiny friend’s website to a high-traffic blog at work. My advice to frond end developers, or web designers who code, build your library of patterns and modules over time so you’re not building the Sun Temple at Cuzco every time<sup><a href="#footnotes">1</a></sup>.</p>
+
+	<ul id="footnotes" class="footnotes">
+		<li>1. The Sun Temple is an astonishing work of architecture and building technique by the Mayans, who never invented the wheel.</li>
+	</ul>
+</div>

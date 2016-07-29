@@ -12,14 +12,12 @@
 @import "modules/button";
 @import "modules/navigation";
 @import "modules/icons";
+@import "modules/tag";
 @import "modules/card";
 @import "modules/mfp";
+@import "modules/footnotes";
 
 
-.tag {
-	color: #888;
-	font-size: .75em;
-}
 .annotation {
 	background-color: rgba(0,0,0,0.5);
 	color: rgba(255,255,255,0.9);

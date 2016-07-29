@@ -1,0 +1,22 @@
+//  tag
+//  ---------------------
+
+$tag-bg				: #ddd !default;
+$tag-warning-bg 	: $warning-bg !default;
+
+//  <em class="tag tag--warning">Inactive</em>
+
+.tag, %tag {
+	padding: 0.25em 0.5em;
+	display: inline-block;
+	font-style: normal;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.8);
+	@include border-radius(2px);
+	background-color: $tag-bg;
+}
+
+.tag--warning {
+	background-color: $tag-warning-bg;
+}

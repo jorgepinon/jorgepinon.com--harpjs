@@ -1,4 +1,12 @@
 {
+  "choose-digital-apps": {
+    "title": "Choose Digital Apps",
+    "hasPost": true,
+    "thumbnail": "img/cpy-thumbnails-sm.jpg",
+    "largeImg": "img/cpy-thumbnails-lg.jpg",
+    "caption": "As a minimally-funded startup, Choose Digital was a great opportunity for me to build up all kids of skills: product concept and building, UX and wireframing, front end coding, pattern library, UI writing, etc.",
+    "tags": ["product design","css", "javascript", "html", "cms"]
+  },
   "choose-digital-website": {
     "title": "ChooseDigital.com",
     "hasPost": true,
@@ -59,11 +67,11 @@
     "tags": ["web design","css", "html"]
   },
   "international-paper": {
-    "title": "International Paper - Sustainability",
+    "title": "International Paper",
     "hasPost": false,
     "thumbnail": "img/th/ip_web-sm.jpg",
     "largeImg": "img/ip_web_detail.jpg",
-    "caption": "This was a very fast little project that I got behind to help IP create an outlet for their sustainability message. I was a bit intimidated to be working for such a large company, not knowing what their expectations were and working completely without branding guidelines.",
+    "caption": "This was a very fast little project that I got to do for International Paper as an explainer for their sustainability message. I was a bit intimidated to be working for such a large company, not knowing what their expectations were and working completely without branding guidelines.",
     "tags": ["web design","css", "html", "javascript"]
   },
   "humane-society-of-memphis": {

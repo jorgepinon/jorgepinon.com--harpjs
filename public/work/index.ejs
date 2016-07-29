@@ -1,38 +1,45 @@
 <h1>Samples of work</h1>
 <p class="lede">Click or tap any image to read about the project or see a larger image.</p>
 
-<ul class="cards">
+<div class="cards">
 
 	<% for(var slug in public.work._data) { %>
 		<% var work = public.work._data[slug]; %>
-		<li>
 
-			<figure class="card">
+		<figure class="card">
+			<% if( work.hasPost == true ) { %>
+				<a href="/work/<%- slug %>.html" title="read more">
+					<img class="card-image" src="<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
+				</a>
+			<% } else { %>
+				<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img card-image"></span>
+			<% } %>
+			<figcaption>
 				<% if( work.hasPost == true ) { %>
-					<a href="/work/<%- slug %>.html" title="read more">
-						<img src="<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
-					</a>
+					<a href="/work/<%- slug %>.html"><%- work.title %></a>
 				<% } else { %>
-					<span><img src="<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img"></span>
+					<%- work.title %>
 				<% } %>
-				<figcaption>
-					<% if( work.hasPost == true ) { %>
-						<a href="/work/<%- slug %>.html"><%- work.title %></a>
-					<% } else { %>
-						<%- work.title %>
-					<% } %>
-				</figcaption>
-			</figure>
+			</figcaption>
+		</figure>
 
-			<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
-				<figure>
-					<img src="<%- work.largeImg %>" class="trigger-popup-img">
-					<% if ( work.caption ) { %>
-					<figcaption><%- work.caption %></figcaption>
-					<% } %>
-				</figure>
-			</div>
-		</li>
+		<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
+			<figure>
+				<img src="<%- work.largeImg %>" class="trigger-popup-img">
+				<% if ( work.caption ) { %>
+				<figcaption>
+					<h4 class="title"><%- work.title %></h4>
+					<%- work.caption %>
+					<ul class="tags list--unstyled">
+						<% work.tags.forEach(function(el,i) { %>
+							<li class="tag"><%- el %></li>
+						<% }); %>
+					</ul>
+				</figcaption>
+				<% } %>
+			</figure>
+		</div>
+
 	<% }; %>
 
-</ul>
+</div>

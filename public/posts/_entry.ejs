@@ -31,17 +31,21 @@
 		<div id="main" role="main">
 
 			<div class="row">
-				<div class="small-12 medium-10 medium-centered large-6 column">
+				<div class="small-12 medium-11 medium-centered large-7 column">
 
-					<a href="/posts">&#9776; Posts</a>
+					<div class="page">
 
-					<article class="entry">
+						<a href="/posts">&#9776; Posts</a>
 
-						<%- yield %>
+						<article class="entry">
 
-					</article>
+							<%- yield %>
 
-					<%- partial("../_partials/_prev-and-next") %>
+						</article>
+
+						<%- partial("../_partials/_prev-and-next") %>
+
+					</div>
 
 				</div>
 

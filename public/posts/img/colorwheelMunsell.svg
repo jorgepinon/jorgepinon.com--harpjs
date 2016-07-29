@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+<g id="pie">
+</g>
+<g id="dots">
+	<g>
+		<polygon fill="#FF8400" points="599.898,599.685 1200,163.684 1200,0 794.747,0 599.897,599.685 		"/>
+		<polygon fill="#FF1500" points="794.747,0 405.048,0 599.897,599.685 		"/>
+		<polygon fill="#B3007D" points="599.897,599.685 405.048,0 0,0 0,163.833 599.897,599.685 		"/>
+		<polygon fill="#00CC3D" points="794.952,1200 1200,1200 1200,1035.685 599.897,599.685 		"/>
+		<polygon fill="#48FF00" points="599.897,599.685 1200,1035.685 1200,599.685 599.898,599.685 		"/>
+		<polygon fill="#FFFF00" points="599.898,599.685 1200,599.685 1200,163.684 		"/>
+		<polygon fill="#9200CC" points="599.897,599.685 0,163.833 0,599.685 599.897,599.685 		"/>
+		<polygon fill="#00B3A5" points="404.843,1200 794.952,1200 599.897,599.685 		"/>
+		<polygon fill="#1E00FF" points="0,599.685 0,1035.536 599.897,599.685 		"/>
+		<polygon fill="#0062CC" points="599.897,599.685 599.897,599.685 0,1035.536 0,1200 404.843,1200 599.897,599.685 		"/>
+		<polygon fill="#0062CC" points="599.897,599.685 599.897,599.685 599.897,599.685 		"/>
+		<polygon fill="#0062CC" points="599.897,599.685 599.897,599.685 599.897,599.685 		"/>
+	</g>
+	<circle fill="#00B3A5" cx="600" cy="225" r="75"/>
+	<circle fill="#FF1500" cx="600" cy="975" r="75"/>
+	<circle fill="#00CC3D" cx="379.581" cy="296.619" r="75"/>
+	<circle fill="#B3007D" cx="820.419" cy="903.381" r="75"/>
+	<circle fill="#48FF00" cx="243.354" cy="484.119" r="75"/>
+	<circle fill="#9200CC" cx="956.646" cy="715.881" r="75"/>
+	<circle fill="#FFFF00" cx="243.354" cy="715.881" r="75"/>
+	<circle fill="#1E00FF" cx="956.646" cy="484.119" r="75"/>
+	<circle fill="#FF8400" cx="379.581" cy="903.381" r="75"/>
+	<circle fill="#0062CC" cx="820.419" cy="296.619" r="75"/>
+</g>
+</svg>
