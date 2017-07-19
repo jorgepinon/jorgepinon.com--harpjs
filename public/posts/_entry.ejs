@@ -9,6 +9,16 @@
 	<meta name="author" content="Jorge Piñon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="<%= title %>" />
+	<% if( typeof summary != 'undefined' ) { %>
+	<meta property="og:description" content="<%= summary %>" />
+	<% } %>
+	<meta property="og:url" content="http://www.jorgepinon.com/posts/<%= current.source %>" />
+	<meta property="og:site_name" content="Journal of Jorge Piñon" />
+
+
 	<meta name="google-site-verification" content="dMHcNiVH7I1ZIMlmGXH0Dnorvj6l-VDy-jCqIw3axTA">
 
 	<link rel="stylesheet" href="/assets/css/main.css" media="screen" charset="utf-8">

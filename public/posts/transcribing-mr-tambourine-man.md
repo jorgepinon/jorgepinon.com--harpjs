@@ -12,4 +12,4 @@ No internet for this! Not even the use of that giant book of Dylan lyrics I have
 
 Yes’n she played through the whole song tirelessly, pausing when she couldn't understand the words and writing when she could. She got a sense of the imagery and mood. She smiled at the aliteration, and she understood the narrator’s plea. I feel like tonight I was able to create a small space safe from the ceaseless din of simple pop music, where she could hopefully learn that the words of a song don’t have to be pablum. Music can also include poetry. 
 
-I won’t push for more because discovery doesn’t work that way, but If she ever asks for another one I’m thinking either When the Ship Comes In or Boots of Spanish Leather. And someday Lily, Rosemary, and the Jack of Hearts.
+I won’t push for more because discovery doesn’t work that way, but if she ever asks for another one I’m thinking either _When the Ship Comes In_ or _Boots of Spanish Leather_. And someday _Lily, Rosemary, and the Jack of Hearts_.

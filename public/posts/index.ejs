@@ -21,16 +21,12 @@
 
 <div class="row">
 
-	<div class="small-12 large-9 large-centered column">
-
-		<div class="row">
-
 			<div class="small-12 medium-9 column">
 
 				<% latestPosts.forEach( function(post) { %>
 					<div class="entry">
 						<%- partial(post.slug) %>
-						<br>
+
 						<a href="/posts/<%- post.slug %>.html">Link to this post</a>
 					</div>
 				<% }); %>
@@ -47,8 +43,5 @@
 				<a href="archive.html">Archive</a>
 			</aside>
 
-		</div>
-
-	</div>
 
 </div>

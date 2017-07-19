@@ -36,6 +36,30 @@ $constrained-width : 1200px !default;
 	padding-bottom: 2em;
 	margin: 0 auto 2em;
 	max-width: 48em;
+	font-size: 120%;
+	line-height: 1.8;
+
+	.posts-index & {
+		padding: 1em;
+		margin-bottom: 4em;
+		background-color: #fff;
+	}
+}
+
+@include respond-min($breakpoint-medium) {
+	.entry {
+		.posts-index & {
+			padding: 3em;
+		}
+	}
+}
+
+@include respond-min($breakpoint-xl) {
+	.entry {
+		.posts-index & {
+			padding: 4em;
+		}
+	}
 }
 
 [role="contentinfo"] {

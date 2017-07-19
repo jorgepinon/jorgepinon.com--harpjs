@@ -1,11 +1,67 @@
 {
+    "ev-williams-on-ad-driven-media": {
+      "layout": "_entry",
+      "title": "Ev Williams on Ad-Driven Media",
+      "summary": "You can’t sustain a publishing business that way.",
+      "tags": ["General"],
+      "date": "2017-01-20",
+      "show-title": true
+    },
+    "three-suggestions-all-us-immigrants": {
+      "layout": "_entry",
+      "title": "Letter to U.S. Immigrants",
+      "summary": "Three suggestions For New U.S. Immigrants",
+      "tags": ["General"],
+      "date": "2017-01-09",
+      "show-title": true
+    },
+    "automator-publishing-to-s3": {
+      "layout": "_entry",
+      "title": "Automator publishing to S3",
+      "summary": "If I make things simple enough, it’ll make me blog more. Right?",
+      "tags": ["Workflow Writing"],
+      "date": "2016-12-20",
+      "show-title": true
+    },
+    "energy-positive-outlook-2017": {
+      "layout": "_entry",
+      "title": "2017 Shows U.S. Moving Away From Coal Energy",
+      "summary": "Good news amid the gloom of 2016 politics and hero deaths",
+      "tags": ["Inspiration Positivity"],
+      "date": "2016-12-19",
+      "show-title": true
+    },
+    "inclusive-design-from-microsoft": {
+      "layout": "_entry",
+      "title": "Microsoft’s New “Inclusive Design”",
+      "summary": "A new type of Design Thinking taking root in Microsoft",
+      "tags": ["Inspiration Design"],
+      "date": "2016-08-12",
+      "show-title": true
+    },
+    "john-and-woman-arms-crossed": {
+      "layout": "_entry",
+      "title": "Untitled",
+      "summary": "Juxtaposition. Marriage.",
+      "tags": ["Inspiration"],
+      "date": "2016-08-03",
+      "show-title": false
+    },
+    "drcleaner-menubar-ui": {
+      "layout": "_entry",
+      "title": "Dr. Cleaner UI",
+      "summary": "Beautiful and visually efficient design",
+      "tags": ["UI"],
+      "date": "2016-08-02",
+      "show-title": true
+    },
     "house-on-an-island": {
       "layout": "_entry",
       "title": "House on an Island",
       "summary": "Fun with Adobe Sketch on my iPad Pro.",
       "tags": ["misc", "art"],
       "date": "2016-07-07",
-      "isPublished": true
+      "show-title": false
     },
     "thoughts-on-javascript-frameworks": {
       "layout": "_entry",
@@ -13,7 +69,7 @@
       "summary": "Any way to build web sites and apps should include web standards at its core.",
       "tags": ["Javascript"],
       "date": "2016-07-06",
-      "isPublished": true
+      "show-title": true
     },
     "transcribing-mr-tambourine-man": {
       "layout": "_entry",
@@ -21,7 +77,7 @@
       "summary": "But for the sky there are no fences facing",
       "tags": ["misc"],
       "date": "2015-10-15",
-      "isPublished": true
+      "show-title": true
     },
     "aurora-if-i-were-a-bee": {
       "layout": "_entry",
@@ -29,7 +85,7 @@
       "summary": "Aurora's bee-related homework writing",
       "tags": ["misc"],
       "date": "2014-7-30",
-      "isPublished": true
+      "show-title": true
     },
     "aurora-office-plan": {
       "layout": "_entry",
@@ -37,7 +93,7 @@
       "summary": "A note found after a visit by Aurora to my office one day",
       "tags": ["misc"],
       "date": "2014-3-4",
-      "isPublished": true
+      "show-title": true
     },
     "overcast-app": {
       "layout": "_entry",
@@ -45,7 +101,7 @@
       "summary": "",
       "tags": ["development"],
       "date": "2014-07-24",
-      "isPublished": true
+      "show-title": true
     },
   "radio-button-buttons": {
     "layout": "_entry",
@@ -53,7 +109,7 @@
     "summary": "",
     "tags": ["CSS", "UI"],
     "date": "2014-07-09",
-    "isPublished": true
+    "show-title": true
   },
   "munsell-color-wheel": {
     "layout": "_entry",
@@ -61,7 +117,7 @@
     "summary": "",
     "tags": ["design"],
     "date": "2014-05-14",
-    "isPublished": true
+    "show-title": true
   },
   "app-dot-net": {
     "layout": "_entry",
@@ -69,7 +125,7 @@
     "summary": "Maybe there's chance",
     "tags": ["misc"],
     "date": "2014-05-09",
-    "isPublished": true
+    "show-title": true
   },
   "wufoo-blog-updates": {
     "layout": "_entry",
@@ -77,7 +133,7 @@
     "summary": "A popup listing what you've missed from the blog",
     "tags": ["UX"],
     "date": "2014-04-18",
-    "isPublished": true
+    "show-title": true
   },
   "flat-is-fine-but-legible-is-better": {
     "layout": "_entry",
@@ -85,7 +141,7 @@
     "summary": "Legibility and accessibility still need to be part of your flat design.",
     "tags": ["design","accessibility"],
     "date": "2014-02-03",
-    "isPublished": true
+    "show-title": true
   },
   "sad-mac-app-dialogs": {
     "layout": "_entry",
@@ -93,7 +149,7 @@
     "summary": "App dialog boxes can't be customized",
     "tags": ["Mac"],
     "date": "2014-01-21",
-    "isPublished": true
+    "show-title": true
   },
   "4k-and-web-images": {
     "layout": "_entry",
@@ -101,7 +157,7 @@
     "summary": "When medium is too big",
     "tags": ["mobile", "design"],
     "date": "2014-01-18",
-    "isPublished": true
+    "show-title": true
   },
   "check-your-email-for-a-link": {
     "layout": "_entry",
@@ -109,7 +165,7 @@
     "summary": "Check your email for a link before reading this post",
     "tags": ["UX"],
     "date": "2013-08-04",
-    "isPublished": true
+    "show-title": true
   },
   "mobile-doesnt-mean-that": {
     "layout": "_entry",
@@ -117,7 +173,7 @@
     "summary": "LOL! It’s like saying “cyberspace”!",
     "tags": ["mobile","development","design"],
     "date": "2013-02-24",
-    "isPublished": true
+    "show-title": true
   },
   "the-tv-remote": {
     "layout": "_entry",
@@ -125,63 +181,63 @@
     "summary": "Phones and tablets should end the age of TV remotes",
     "tags": ["apple","tech"],
     "date": "2013-01-30",
-    "isPublished": true
+    "show-title": true
   },
   "a-new-design-layer": {
     "layout": "_entry",
     "title": "Proposal for a new CSS design layer",
     "tags": ["design, CSS"],
     "date": "2013-01-10",
-    "isPublished": true
+    "show-title": true
   },
   "why-i-cant-use-photoshop": {
     "layout": "_entry",
     "title": "Why I can’t switch to Photoshop for icons and other UI assets",
     "tags": ["design, UX"],
     "date": "2012-09-09",
-    "isPublished": true
+    "show-title": true
   },
   "disable-java-on-mac-browsers": {
     "layout": "_entry",
     "title": "Disable java on Mac OS browsers",
     "tags": ["Link"],
     "date": "2012-08-29",
-    "isPublished": true
+    "show-title": true
   },
   "tate-modern": {
     "layout": "_entry",
     "title": "Tate Modern",
     "tags": ["photo"],
     "date": "2012-03-06",
-    "isPublished": true
+    "show-title": true
   },
   "no-one-wants-to-make-lists-that-way": {
     "layout": "_entry",
     "title": "No one wants to make lists (that way)",
     "tags": ["UX"],
     "date": "2012-02-12",
-    "isPublished": true
+    "show-title": true
   },
   "for-whom-helvetica-speaks": {
     "layout": "_entry",
     "title": "For whom Helvetica speaks",
     "tags": ["web design, typography"],
     "date": "2012-02-10",
-    "isPublished": true
+    "show-title": true
   },
   "you-can-use-2-spaces": {
     "layout": "_entry",
     "title": "Yes, you can use 2 spaces after periods.",
     "tags": ["typography"],
     "date": "2012-02-04",
-    "isPublished": true
+    "show-title": true
   },
-    "a-service-for-regular-investors": {
+  "a-service-for-regular-investors": {
     "layout": "_entry",
     "title": "A service for regular investors",
     "tags": ["misc"],
     "date": "2012-02-01",
-    "isPublished": true
+    "show-title": true
   }
 
 }
