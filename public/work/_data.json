@@ -7,6 +7,14 @@
     "caption": "As a minimally-funded startup, Choose Digital was a great opportunity for me to build up all kids of skills: product concept and building, UX and wireframing, front end coding, pattern library, UI writing, etc.",
     "tags": ["product design","css", "javascript", "html", "cms"]
   },
+  "viggle-store-webapp": {
+    "title": "Viggle Store Web App",
+    "hasPost": true,
+    "thumbnail": "img/th/viggle-store-home-crop.jpg",
+    "largeImg": "img/th/viggle-store-home-crop.jpg",
+    "caption": "Viggle Store was a digital media store for music, e-books, audiobooks, movies, and TV, and the app supported both the web environment and native webviews",
+    "tags": ["product design","css", "javascript", "html"]
+  },
   "choose-digital-website": {
     "title": "ChooseDigital.com",
     "hasPost": true,
@@ -14,6 +22,20 @@
     "largeImg": "img/choose_website_homepage.jpg",
     "caption": "The goal for ChooseDigital.com I set out to create: present the company as experts in digital media, awards incentives, and the company’s services as easily integrated into large enterprise portal-style marketplace sies yet with a modern aesthetic. Easy, right?",
     "tags": ["Project Lead","css", "javascript", "html", "cms"]
+  },
+  "cd-booth-graphics": {
+    "title": "Choose Digital Booth Graphics",
+    "hasPost": true,
+    "thumbnail": "img/th/choose-digital-booth-graphics-thumb.jpg",
+    "largeImg": "img/choose-digital-booth-graphics.jpg",
+    "tags": ["concept", "design", "print supervision"]
+  },
+  "own-your-music-logo": {
+    "title": "Own Your Music logo",
+    "hasPost": true,
+    "thumbnail": "img/own-your-music-tshirt-logo.png",
+    "largeImg": "img/own-your-music-tshirt-logo.png",
+    "tags": ["concept", "design"]
   },
   "avaya-rewards-site": {
     "title": "Avaya Rewards",
@@ -87,7 +109,7 @@
     "thumbnail": "img/th/smallwoods-catalog-sm.jpg",
     "largeImg": "img/smallwoods-catalog.jpg",
     "caption": "A series of printed catalogs I art directed and designed, and for which I oversaw press production. Smallwoods is a boutique store that outfits staff and officers throughout the ship and yacht industries.",
-    "tags": ["design, print"]
+    "tags": ["design", "print supervision"]
   },
   "isp-logos": {
     "title": "Logo for ISP",
@@ -109,7 +131,7 @@
     "hasPost": false,
     "thumbnail": "img/th/silversea-brochure-sm.jpg",
     "largeImg": "img/silversea-brochure.jpg",
-    "tags": ["design, print"]
+    "tags": ["design", "print supervision"]
   },
   "collette": {
     "title": "Collette",

@@ -733,12 +733,6 @@ footer[role="contentinfo"] {
   max-width: 480px;
 }
 
-.index .container {
-  background-image: url(/assets/img/bg/redbug-wall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .site #main {
   height: 100vh;
   display: table;
@@ -816,7 +810,7 @@ footer[role="contentinfo"] {
 
 figure {
   padding: 1em;
-  margin: 3em 0;
+  margin: 1em 0 2em;
   max-width: 100%;
   border: solid 1px #d2d2d2;
   overflow: hidden;
@@ -825,7 +819,6 @@ figure img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 figure.fit {
   float: none;
@@ -837,18 +830,24 @@ figure.fit {
 }
 
 figcaption {
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  color: #888;
+  color: #777;
   max-width: 38em;
   margin: 0 auto;
+  line-height: 1.2;
+  font-size: 0.75em;
 }
 figcaption .title {
-  font-size: 1em;
+  font-size: 1.15em;
   color: #444;
 }
 
 @media all and (min-width: 768px) {
+  figure.pull--left {
+    width: 45%;
+  }
+
   figcaption {
     font-size: 0.875em;
   }
@@ -1130,16 +1129,40 @@ nav > a:hover {
   overflow: hidden;
   padding: 0.5em;
   background: #fafafa;
-  border-top: solid 1px #eee;
-}
-.card .card-image {
+  border: none;
   float: left;
-  width: 33%;
+  width: 49%;
+  max-width: 280px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 .card figcaption {
   text-align: left;
   overflow: hidden;
-  line-height: 1.2;
+}
+.card figcaption a:hover {
+  text-decoration: none;
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.card:hover img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.card-description {
+  margin: 1em 0;
+}
+
+.card--sm-horizontal .card-image {
+  float: left;
+  width: 33%;
 }
 
 .cards {
@@ -1157,7 +1180,7 @@ nav > a:hover {
   .cards .card {
     float: left;
     width: 30%;
-    padding: 1em;
+    padding: 0.5em;
     margin-left: 1em;
   }
   .cards .card .card-image {
@@ -1165,7 +1188,9 @@ nav > a:hover {
   }
   .cards .card figcaption {
     text-align: center;
-    height: 5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 4em;
   }
 }
 @media all and (min-width: 1024px) {
@@ -1457,6 +1482,11 @@ button::-moz-focus-inner {
 
 .mfp-removing .mfp-with-anim {
   opacity: 0;
+}
+
+.mfp-figure figcaption {
+  font-size: 1em;
+  line-height: inherit;
 }
 
 @media screen and (max-width: 900px) {

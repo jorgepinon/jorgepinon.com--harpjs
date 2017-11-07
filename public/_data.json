@@ -8,13 +8,10 @@
 	"404": {
 		"title": "Missing!"
 	},
-	"rss": {
+	"rss.xml": {
 		"layout": false
 	},
-	"feed": {
-		"layout": false
-	},
-	"sitemap": {
+	"sitemap.xml": {
 		"layout": false
 	}
 }

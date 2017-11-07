@@ -399,6 +399,13 @@ button {
 }
 
 
+.mfp-figure {
+	figcaption {
+		font-size: 1em;
+		line-height: inherit;
+	}
+}
+
 // Scale navigation arrows and reduce padding from sides
 @include respond-max(900px) {
 	.mfp-arrow {

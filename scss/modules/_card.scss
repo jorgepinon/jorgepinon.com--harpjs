@@ -1,22 +1,53 @@
-// initially horizontal layout
 .card {
 	margin: 0 0 1em 0;
 	overflow: hidden;
 	padding: 0.5em;
 	background: $white;
-	border-top: solid 1px #eee;
+	border: none;
+	float: left;
+	width: 49%;
+	max-width: 280px;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
 
-	.card-image {
-		float: left;
-		width: 33%;
-	}
 
 	figcaption {
 		text-align: left;
 		overflow: hidden;
-		line-height: 1.2;
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	&:hover {
+		background-color: rgba(0,0,0,0.05);
+
+		img {
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+
 	}
 }
+
+.card-title {
+	font-size: 1.3em;
+	margin: 0;
+}
+
+.card-description {
+	margin: 1em 0;
+}
+
+// initially horizontal layout
+.card--sm-horizontal {
+	.card-image {
+		float: left;
+		width: 33%;
+	}
+}
+
 
 // wrap in .cards container for size control
 .cards {
@@ -33,7 +64,7 @@
 	.cards .card {
 		float: left;
 		width: 30%;
-		padding: 1em;
+		padding: 0.5em;
 		margin-left: 1em;
 
 		.card-image {
@@ -42,7 +73,9 @@
 
 		figcaption {
 			text-align: center;
-			height: 5em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			height: 4em;
 		}
 	}
 }

@@ -2,6 +2,7 @@
 	"domains": [""],
 	"globals": {
 		"site_title": "jorgepinon.com",
+		"description": "Personal site of Jorge Luís Piñón",
 		"twitter": "jorgepinon",
 		"site_url": "http://jorgepinon.com",
 		"sitemap": {

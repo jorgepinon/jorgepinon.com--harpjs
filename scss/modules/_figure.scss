@@ -1,6 +1,6 @@
 figure {
 	padding: 1em;
-	margin: 3em 0;
+	margin: 1em 0 2em;
 	max-width: 100%;
 	border: solid 1px $light-grey;
 	overflow: hidden;
@@ -9,7 +9,6 @@ figure {
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
-		box-shadow: 0 0 5px rgba(0,0,0,0.3);
 	}
 
 	&.fit {
@@ -24,19 +23,24 @@ figure {
 }
 
 figcaption {
-	padding: 1em;
+	padding: 0.5em;
 	text-align: center;
-	color: #888;
+	color: #777;
 	max-width: 38em;
 	margin: 0 auto;
+	line-height: 1.2;
+	font-size: 0.75em;
 
 	.title {
-		font-size: 1em;
+		font-size: 1.15em;
 		color: $page-color;
 	}
 }
 
 @media all and (min-width: 768px) {
+	figure.pull--left {
+		width: 45%;
+	}
 	figcaption {
 		font-size: 0.875em;
 	}
