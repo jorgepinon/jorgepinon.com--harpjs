@@ -161,7 +161,7 @@
   },
   "check-your-email-for-a-link": {
     "layout": "_entry",
-    "title": "Onboarding should be easy",
+    "title": "Registration should be easy",
     "summary": "Check your email for a link before reading this post",
     "tags": ["UX"],
     "date": "2013-08-04",
@@ -216,13 +216,6 @@
     "title": "No one wants to make lists (that way)",
     "tags": ["UX"],
     "date": "2012-02-12",
-    "show-title": true
-  },
-  "for-whom-helvetica-speaks": {
-    "layout": "_entry",
-    "title": "For whom Helvetica speaks",
-    "tags": ["web design, typography"],
-    "date": "2012-02-10",
     "show-title": true
   },
   "you-can-use-2-spaces": {
