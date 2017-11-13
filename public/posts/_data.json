@@ -1,18 +1,20 @@
 {
+    "basic-rules-for-managing-creative-teams": {
+      "layout": "_entry",
+      "title": "Basic Rules for Managing Creative Teams",
+      "summary": "It doesn't work like sales, at all.",
+      "tags": [
+        "General", "development", "management"
+      ],
+      "date": "2017-11-01",
+      "show-title": true
+    },
     "ev-williams-on-ad-driven-media": {
       "layout": "_entry",
       "title": "Ev Williams on Ad-Driven Media",
       "summary": "You can’t sustain a publishing business that way.",
       "tags": ["General"],
       "date": "2017-01-20",
-      "show-title": true
-    },
-    "three-suggestions-all-us-immigrants": {
-      "layout": "_entry",
-      "title": "Letter to U.S. Immigrants",
-      "summary": "Three suggestions For New U.S. Immigrants",
-      "tags": ["General"],
-      "date": "2017-01-09",
       "show-title": true
     },
     "automator-publishing-to-s3": {
