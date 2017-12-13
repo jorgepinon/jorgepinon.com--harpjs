@@ -885,7 +885,7 @@ figcaption .title {
 .masthead {
   position: relative;
   z-index: 100;
-  font-size: 1.1em;
+  font-size: 0.925em;
   margin-bottom: 2em;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.7);
@@ -894,7 +894,6 @@ figcaption .title {
   padding-right: 0.5em;
 }
 .masthead .nav--block > a, .masthead .nav--block > a:visited {
-  font-size: 0.75em;
   line-height: 44px;
   padding: 0 0.75em;
   vertical-align: bottom;
@@ -904,8 +903,8 @@ figcaption .title {
 
 .sitelogo {
   margin: 0;
-  font-size: 0.875em;
   padding: 0 10px;
+  font-size: 1em;
   line-height: 44px;
 }
 
@@ -913,6 +912,13 @@ figcaption .title {
   text-align: left;
 }
 
+@media all and (min-width: 768px) {
+  .masthead {
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
 button:focus {
   outline: 0;
   background-color: rgba(0, 0, 0, 0.15);
@@ -1135,12 +1141,11 @@ nav > a:hover {
   margin: 0 0 1em 0;
   overflow: hidden;
   padding: 0.5em;
-  background: #fafafa;
   border: none;
   float: left;
   width: 49%;
   max-width: 280px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
