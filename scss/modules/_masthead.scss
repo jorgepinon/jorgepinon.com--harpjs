@@ -7,12 +7,26 @@
 	margin-bottom: 2em;
 	overflow: hidden;
 	background-color: rgba(255,255,255,0.7);
+
+	.nav--block {
+		padding-right: 0.5em;
+
+		> a, > a:visited {
+			font-size: 0.75em;
+			line-height: 44px;
+			padding: 0 0.75em;
+			vertical-align: bottom;
+			color: #666;
+			text-transform: uppercase;
+		}
+	}
 }
 
 .sitelogo {
 	margin: 0;
-	font-size: 1.2em;
-	padding: 10px;
+	font-size: 0.875em;
+	padding: 0 10px;
+	line-height: 44px;
 }
 .sitelogo a, .sitelogo a:visited {
 	text-align: left;

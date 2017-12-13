@@ -37,12 +37,12 @@ $line-height-ratio: $base-line-height / $base-font-size;
 // palette
 $black 			: #1e2023;
 $dark-grey 		: #282B35;
-$text			: #444;
+$text			: #333;
 $grey 			: #555963;
-$light-grey 	: #d2d2d2;
+$light-grey 	: #eef0f1;
 $white 			: #fafafa;
 
-$body-bg 			: $white;
+$body-bg 			: $light-grey;
 $body-color 		: $text;
 $page-bg 			: $body-bg;
 $page-color 		: $body-color;

@@ -10,7 +10,7 @@ $controls-opacity:					0.65 !default;
 $controls-color:					#FFF !default;
 $close-icon-size:					44px !default;
 $close-font-size:					44px !default;
-$inner-close-icon-color:			#eee !default;
+$inner-close-icon-color:			#333 !default;
 $controls-text-color:				#CCC !default; // Color of preloader and "1 of X" indicator
 $controls-text-color-hover:			#FFF !default;
 $arrow-width:						40px !default;
@@ -119,10 +119,11 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 auto;
+	padding: 1em;
 	text-align: left;
 	z-index: $z-index-base + 5;
+	background-color: $white;
 
-	//cd mods
 	min-height: $arrow-height + $close-icon-size * 2;
 
 	.mfp-gallery & .sheet {
@@ -131,7 +132,8 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 
 	figure {
 		padding: 2em;
-		background-color: $white;
+		margin: 0;
+		border: none;
 	}
 	figcaption {
 		text-align: left;

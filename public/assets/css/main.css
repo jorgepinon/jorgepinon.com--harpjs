@@ -97,7 +97,7 @@ html, body {
 html {
   font-size: 14px;
   -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: white;
+  -webkit-tap-highlight-color: #f2f2f2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -106,11 +106,11 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #eef0f1;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.4;
-  color: #444;
+  color: #333;
 }
 
 @media screen and (min-width: 768px) {
@@ -161,14 +161,14 @@ a:active, a:focus {
 }
 
 ::-moz-selection {
-  background-color: #d2d2d2;
-  color: #444;
+  background-color: #eef0f1;
+  color: #333;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: #d2d2d2;
-  color: #444;
+  background-color: #eef0f1;
+  color: #333;
   text-shadow: none;
 }
 
@@ -776,8 +776,8 @@ footer[role="contentinfo"] {
 [role="contentinfo"] {
   position: relative;
   padding: 1em 0 1.4;
-  background-color: #fafafa;
-  color: #444;
+  background-color: #eef0f1;
+  color: #333;
 }
 @media (min-width: 768px) {
   [role="contentinfo"] {
@@ -812,7 +812,7 @@ figure {
   padding: 1em;
   margin: 1em 0 2em;
   max-width: 100%;
-  border: solid 1px #d2d2d2;
+  border: solid 1px #eef0f1;
   overflow: hidden;
 }
 figure img {
@@ -840,7 +840,7 @@ figcaption {
 }
 figcaption .title {
   font-size: 1.15em;
-  color: #444;
+  color: #333;
 }
 
 @media all and (min-width: 768px) {
@@ -865,10 +865,10 @@ figcaption .title {
 .block-list {
   list-style: none;
   margin-left: 0;
-  border-top: solid 1px #d2d2d2;
+  border-top: solid 1px #eef0f1;
 }
 .block-list > li {
-  border-bottom: solid 1px #d2d2d2;
+  border-bottom: solid 1px #eef0f1;
   padding: 1em;
 }
 
@@ -890,11 +890,23 @@ figcaption .title {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.7);
 }
+.masthead .nav--block {
+  padding-right: 0.5em;
+}
+.masthead .nav--block > a, .masthead .nav--block > a:visited {
+  font-size: 0.75em;
+  line-height: 44px;
+  padding: 0 0.75em;
+  vertical-align: bottom;
+  color: #666;
+  text-transform: uppercase;
+}
 
 .sitelogo {
   margin: 0;
-  font-size: 1.2em;
-  padding: 10px;
+  font-size: 0.875em;
+  padding: 0 10px;
+  line-height: 44px;
 }
 
 .sitelogo a, .sitelogo a:visited {
@@ -1056,11 +1068,6 @@ nav > a:hover {
   display: block;
 }
 
-.nav--block > a {
-  background-color: #EAF2BE;
-  color: #333;
-}
-
 .stroke {
   stroke: #222;
 }
@@ -1152,7 +1159,7 @@ nav > a:hover {
 }
 
 .card-title {
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -1261,8 +1268,10 @@ nav > a:hover {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
+  padding: 1em;
   text-align: left;
   z-index: 1045;
+  background-color: #fafafa;
   min-height: 128px;
 }
 .mfp-gallery .mfp-content .sheet {
@@ -1270,7 +1279,8 @@ nav > a:hover {
 }
 .mfp-content figure {
   padding: 2em;
-  background-color: #fafafa;
+  margin: 0;
+  border: none;
 }
 .mfp-content figcaption {
   text-align: left;
@@ -1393,7 +1403,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-close-btn-in .mfp-close {
-  color: #eee;
+  color: #333;
 }
 
 .mfp-image-holder .mfp-close {
@@ -1508,7 +1518,7 @@ button::-moz-focus-inner {
 .footnotes {
   margin: 6em 0 3em;
   padding: 1em;
-  border-top: solid 1px #d2d2d2;
+  border-top: solid 1px #eef0f1;
   list-style: none;
   font-size: 0.75em;
 }
