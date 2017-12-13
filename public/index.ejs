@@ -1,60 +1,72 @@
-<div class="cards">
-
-	<% for(var slug in public.work._data) { %>
-		<% var work = public.work._data[slug]; %>
-
-		<figure class="card">
-			<% if( work.hasPost == true ) { %>
-				<a href="/work/<%- slug %>.html" title="read more">
-					<img class="card-image" src="/work/<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
-				</a>
-			<% } else { %>
-				<span>
-					<img src="/work/<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img card-image">
-				</span>
-			<% } %>
-			<figcaption>
-				<% if( work.hasPost == true ) { %>
-					<a href="/work/<%- slug %>.html">
-						<h2 class="card-title"><%- work.title %></h2>
-					</a>
-				<% } else { %>
-					<h2 class="card-title"><%- work.title %></h2>
-				<% } %>
-			</figcaption>
-		</figure>
-
-		<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
-			<figure>
-				<img src="/work/<%- work.largeImg %>" class="trigger-popup-img">
-				<% if ( work.caption ) { %>
-					<figcaption>
-						<h2 class="card-title">
-							<%- work.title %>
-						</h2>
-						<div class="card-description">
-							<%- work.caption %>
-						</div>
-
-						<ul class="tags list--unstyled">
-							<% work.tags.forEach(function(el,i) { %>
-								<li class="tag">
-									<%- el %>
-								</li>
-							<% }); %>
-						</ul>
-					</figcaption>
-				<% } %>
-			</figure>
-		</div>
-
-	<% }; %>
-
-</div>
-
 <div class="row">
 	<div class="column">
-		<p>
+
+		<div class="cards">
+
+			<% for(var slug in public.work._data) { %>
+				<% var work = public.work._data[slug]; %>
+
+				<figure class="card">
+					<% if( work.hasPost == true ) { %>
+						<a href="/work/<%- slug %>.html" title="read more">
+							<img class="card-image" src="/work/<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
+						</a>
+					<% } else { %>
+						<span>
+							<img src="/work/<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img card-image">
+						</span>
+					<% } %>
+					<figcaption>
+						<% if( work.hasPost == true ) { %>
+							<a href="/work/<%- slug %>.html">
+								<h2 class="card-title">
+									<%- work.title %>
+								</h2>
+							</a>
+						<% } else { %>
+							<h2 class="card-title">
+								<%- work.title %>
+							</h2>
+						<% } %>
+					</figcaption>
+				</figure>
+
+				<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
+					<figure>
+						<img src="/work/<%- work.largeImg %>" class="trigger-popup-img">
+						<% if ( work.caption ) { %>
+							<figcaption>
+								<h2 class="card-title">
+									<%- work.title %>
+								</h2>
+								<div class="card-description">
+									<%- work.caption %>
+								</div>
+
+								<ul class="tags list--unstyled">
+								<% work.tags.forEach(function(el,i) { %>
+									<li class="tag">
+										<%- el %>
+									</li>
+								<% }); %>
+								</ul>
+							</figcaption>
+						<% } %>
+					</figure>
+				</div>
+
+			<% }; %>
+
+		</div>
+
+	</div>
+</div>
+
+
+<br><br>
+<div class="row">
+	<div class="small-11 small-centered medium-9 column">
+		<p class="text--centered">
 			This is the personal portfolio site of Jorge Piñon. Got a project we can work on? Contact me <a href="https://twitter.com/jorgepinon">@jorgepinon</a> on Twitter.
 		</p>
 
