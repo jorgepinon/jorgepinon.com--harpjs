@@ -15,7 +15,7 @@
 			line-height: 44px;
 			padding: 0 0.75em;
 			vertical-align: bottom;
-			color: #666;
+			font-weight: bold;
 			text-transform: uppercase;
 		}
 	}
@@ -24,6 +24,7 @@
 .sitelogo {
 	margin: 0;
 	padding: 0 10px;
+	font-family : $base-font;
 	font-size: 1em;
 	line-height: 44px;
 }
@@ -33,9 +34,8 @@
 
 @media all and (min-width: 768px) {
 	.masthead {
-		font-size: 1.3em;
+		font-size: 1.1em;
 		padding-top: 1em;
-		padding-bottom: 1em;
 	}
 
 }

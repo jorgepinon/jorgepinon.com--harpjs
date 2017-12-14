@@ -1,8 +1,9 @@
 /* Variables =================================================== */
 
 // type
-$base-font : 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$custom-font : 'Source Sans Pro', sans-serif;;
+$base-font : "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$custom-font : "Source Sans Pro", sans-serif;
+$serif-font : Georgia, "Times New Roman", serif;
 $base-font-size : 14px;
 $base-line-height : 1.4;
 $base-heading-font : inherit;
@@ -15,7 +16,7 @@ $tap-height : 42px;
 
 $handheld-base-font-size	: $base-font-size;
 $tablet-base-font-size		: 16px;
-$desktop-base-font-size		: 18px;
+$desktop-base-font-size		: 17px;
 
 $baseline : $base-line-height;
 $gutterwidth : 20px;
@@ -37,8 +38,8 @@ $line-height-ratio: $base-line-height / $base-font-size;
 // palette
 $black 			: #1e2023;
 $dark-grey 		: #282B35;
-$text			: #333;
-$grey 			: #555963;
+$text			: $dark-grey;
+$grey 			: #646872;
 $light-grey 	: #eef0f1;
 $white 			: #fafafa;
 

@@ -23,25 +23,29 @@ figure {
 }
 
 figcaption {
-	padding: 0.5em;
+	padding: 2em 1em 0;
 	text-align: center;
-	color: #777;
+	color: $grey;
 	max-width: 38em;
 	margin: 0 auto;
 	line-height: 1.2;
+	font-family: $serif-font;
 	font-size: 0.75em;
+	font-style: italic;
 
 	.title {
 		font-size: 1.15em;
 		color: $page-color;
 	}
+
+	p {
+		margin-bottom: 0.5em;
+	}
+
 }
 
 @media all and (min-width: 768px) {
 	figure.pull--left {
 		width: 45%;
-	}
-	figcaption {
-		font-size: 0.875em;
 	}
 }

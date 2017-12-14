@@ -29,32 +29,37 @@ $constrained-width : 1200px !default;
 	overflow: hidden;
 	padding-bottom: 2em;
 	margin: 0 auto 2em;
-	max-width: 48em;
-	font-size: 120%;
+	max-width: 40em;
 	line-height: 1.8;
 
+	// post index and singles
+	.page-posts & {
+		padding: 1em;	
+	}
+
+	// post index override
 	.posts-index & {
 		padding: 1em;
 		margin-bottom: 4em;
 		background-color: #fff;
 	}
+
 }
 
 @include respond-min($breakpoint-medium) {
 	.entry {
+		// post index and singles
+		.page-posts & {
+			padding: 0 3em 3em;	
+		}
+
+		// post index override
 		.posts-index & {
 			padding: 3em;
 		}
 	}
 }
 
-@include respond-min($breakpoint-xl) {
-	.entry {
-		.posts-index & {
-			padding: 4em;
-		}
-	}
-}
 
 [role="contentinfo"] {
 	position: relative;
