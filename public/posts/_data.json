@@ -1,10 +1,23 @@
 {
+    "harp-to-s3-workflow": {
+      "layout": "_entry",
+      "title": "HarpJs to Amazon s3 workflow",
+      "summary": "Using the AWS cli",
+      "tags": [
+        "General",
+        "development"
+      ],
+      "date": "2017-12-13",
+      "show-title": true
+    },
     "basic-rules-for-managing-creative-teams": {
       "layout": "_entry",
       "title": "Basic Rules for Managing Creative Teams",
       "summary": "It doesn't work like sales, at all.",
       "tags": [
-        "General", "development", "management"
+        "General",
+        "development",
+        "management"
       ],
       "date": "2017-11-01",
       "show-title": true

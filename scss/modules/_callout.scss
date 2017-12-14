@@ -16,6 +16,10 @@ $warning-bg		: #f9ebb2 !default;
 	padding: 2em;
 	margin-bottom: 1em;
 	background-color: $callout-bg;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
 }
 
 

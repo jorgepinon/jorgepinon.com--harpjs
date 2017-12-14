@@ -5,15 +5,7 @@
 <p class="datestamp">December 20, 2016</p>
 
 <div class="callout">
-	<p><b>UPDATE (2017-12-13):</b> I just recently found out that the [aws-cli](http://docs.aws.amazon.com/cli/latest/reference/index.html#cli-aws) contains commands for [s3](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html#), including [sync](http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html). So here’s my harp-to-s3 workflow now: </p>
-	<ol>
-		<li>Once you’re done with local changes in harp, open a terminal and ```cd``` into the root directory of your site</li>
-		<li>Run ```harp compile```</li>
-		<li>Then ```cd www``` (the directory where harp places the compiled html)</li>
-		<li>Then ```aws s3 sync . s3://www.jorgepinon.com --exclude "*.DS_Store" --dryrun``` — I like to exclude those dumb .DS_Store files and use the ```--dryrun``` flag first to see what would be uploaded.</li>
-		<li>If the dry run list looks correct, then ```aws s3 sync . s3://www.jorgepinon.com --exclude "*.DS_Store"```</li>
-		<li>Confirm live changes by pointing your browser to your site.</li>
-	</ol>
+	<p><b>UPDATE (2017-12-13):</b> I [wrote about a new strategy](harp-to-s3-workflow.html), using AWS’s own command line interface to update the s3 bucket. It’s much better and this one had some problems anyway.</p>
 </div>
 
 I use [Harp JS](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjT7PfJsITRAhWJ5yYKHW9UBxIQFggcMAA&url=https%3A%2F%2Fharpjs.com%2F&usg=AFQjCNHlLkKgZ5oYHpnFAr1sBMzwHPCBeg&sig2=lEeSZ7BreaF8JV3RJ9_JiA) for this site. (Harp is a static site generator with almost the perfect balance between simplicity and customization, and I hope it lives for a long time. Go check it out.) I then host the static html files in an Amazon s3 bucket. A fairly common setup these days for static sites.

@@ -153,6 +153,11 @@ a:active, a:focus {
 
 .entry p a {
   border-bottom: solid 4px #9aeae5;
+  padding: 0 0.15em;
+}
+.entry p a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .link--padded, .btn--link {
@@ -266,7 +271,7 @@ pre {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 1.5em 1.5em;
+  margin: 0 0 2em;
 }
 
 ul ul, ul ol, ol ol, ol ul {
@@ -760,6 +765,8 @@ footer[role="contentinfo"] {
 
 .page {
   background-color: rgba(250, 250, 250, 0.9);
+  max-width: 42em;
+  margin: 0 auto;
   padding: 1em;
 }
 @media (min-width: 768px) {
@@ -771,8 +778,7 @@ footer[role="contentinfo"] {
 .entry {
   overflow: hidden;
   padding-bottom: 2em;
-  margin: 0 auto 2em;
-  max-width: 40em;
+  margin-bottom: 2em;
   line-height: 1.8;
 }
 .page-posts .entry {
@@ -1074,6 +1080,9 @@ button:focus {
   padding: 2em;
   margin-bottom: 1em;
   background-color: #f5f7e4;
+}
+.callout p:last-child {
+  margin-bottom: 0;
 }
 
 .callout--success {

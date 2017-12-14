@@ -74,7 +74,14 @@ a {
 
 .entry p a {
 	border-bottom: solid 4px #9aeae5;
+	padding: 0 0.15em;
+
+	&:hover {
+		text-decoration: none;
+		background-color : rgba(0,0,0,0.05);
+	}
 }
+
 .link--padded {
 	line-height: 40px;
 	vertical-align: middle;
@@ -186,7 +193,7 @@ pre {
 //   =LISTS   ==================================================
 ul, ol {
 	padding: 0;
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 0 2em;
 }
 ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
 ol { list-style: decimal; }

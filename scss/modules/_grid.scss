@@ -30,10 +30,12 @@
 }
 
 [class*="column"] + [class*="column"]:last-child {
-  float: right; }
+	float: right; 
+}
 
 [class*="column"] + [class*="column"].end {
-  float: left; }
+	float: left; 
+}
 
 
 
