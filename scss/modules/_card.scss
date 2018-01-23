@@ -12,8 +12,11 @@
 
 
 	figcaption {
-		text-align: left;
 		overflow: hidden;
+		height: 5em;
+		line-height: 1.2;
+
+		text-align: left;
 
 		a:hover {
 			text-decoration: none;
