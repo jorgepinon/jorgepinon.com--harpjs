@@ -1,142 +1,299 @@
 {
+  "watsco.com-site": {
+    "title": "Watsco.com",
+    "hasPost": true,
+    "thumbnail": "img/th/watsco.com-home-investorstory-widget--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/watsco.com-home-investorstory-widget.jpg",
+    "caption": "Custom Wordpress theme for Watsco.com",
+    "tags": [
+      "CSS",
+      "JavaScript",
+      "HTML",
+      "Wordpress"
+    ]
+  },
+  "sentree.com-site": {
+    "title": "Sentree.com",
+    "hasPost": true,
+    "thumbnail": "img/th/sentree.com-detail--sm.jpg",
+    "thumbnail--sm": "",
+    "largeImg": "img/sentree.com-device-layout-design.jpg",
+    "caption": "I built this site for the Sentree device using their required Wordpress X-Theme.",
+    "tags": [
+      "CSS",
+      "JavaScript",
+      "HTML",
+      "Wordpress"
+    ]
+  },
+  "menuapp-settings-form-ui": {
+    "title": "Menu app settings form UI",
+    "hasPost": true,
+    "thumbnail": "img/th/menuapp-settings-form-ui--thumb.jpg",
+    "thumbnail--sm": "img/th/menuapp-settings-form-ui--thumb--sm.jpg",
+    "largeImg": "img/menuapp-settings-form-ui.png",
+    "caption": "Applying styles to match the final published site UI",
+    "tags": [
+      "Design",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ]
+  },
+  "downloadcard-carrier-mockups": {
+    "title": "MRetail shelf hangers",
+    "hasPost": false,
+    "thumbnail": "img/th/downloadcard-carrier-mockups--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/downloadcard-carrier-mockups.jpg",
+    "caption": "Mockups for retail shelf hangers for The DownloadCard",
+    "tags": [
+      "Design",
+      "Print"
+    ]
+  },
+  "small-screen-navigation-pattern": {
+    "title": "Small screen alternating nav pattern",
+    "hasPost": false,
+    "thumbnail": "img/th/small-screen-navigation--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/mobile-alternating-nav-search-pattern.png",
+    "caption": "Small screen alternating nav pattern",
+    "tags": [
+      "UI"
+    ]
+  },
+  "media-ecommerce-ui-library": {
+    "title": "Media UI Library",
+    "hasPost": false,
+    "thumbnail": "img/th/wf--ui-modules-130226--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/cpy-ui-library.png",
+    "caption": "A media e-commerce UI Library we built for Choose Digital’s loyalty/incentive digital media store",
+    "tags": [
+      "UI"
+    ]
+  },
+  "cd-logo-treatments": {
+    "title": "Choose Digital logo scratch",
+    "hasPost": false,
+    "thumbnail": "img/th/cd-logo-treatments--thumb.jpg",
+    "thumbnail--sm": "",
+    "largeImg": "img/cd-logo-treatments.png",
+    "caption": "Sketch treatments for Choose Digital logo",
+    "tags": [
+      "Logo Design"
+    ]
+  },
+  "downloadcard-logo-treatments": {
+    "title": "The DownloadCard logo",
+    "hasPost": false,
+    "thumbnail": "img/th/downloadcard-logotype-treatments--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/downloadcard-logotype-treatments.png",
+    "caption": "Several treatments for The DownloadCard logo",
+    "tags": [
+      "Logo Design"
+    ]
+  },
+  "media-icons": {
+    "title": "Five Media Icons",
+    "hasPost": false,
+    "thumbnail": "img/th/5-media-icons--thumb.png",
+    "thumbnail--sm": "",
+    "largeImg": "img/5-media-icons.png",
+    "caption": "Icon set for digital media formats: music, movies, TV, eBooks, and audiobooks.",
+    "tags": [
+      "Design",
+      "Print"
+    ]
+  },
+  "choose-digital-flyer": {
+    "title": "Choose Digital Flyer",
+    "hasPost": false,
+    "thumbnail": "img/th/choosedigital-flyer--crop.jpg",
+    "thumbnail--sm": "",
+    "largeImg": "img/choosedigital-flyer.jpg",
+    "caption": "Flyer with Photoshopped screen image",
+    "tags": [
+      "Design",
+      "Print"
+    ]
+  },
+  "mileageplus-microsite": {
+    "title": "MileagePlus microsite",
+    "hasPost": false,
+    "thumbnail": "img/th/microsite-mileagePlus--crop.jpg",
+    "thumbnail--sm": "",
+    "largeImg": "img/mileageplus-microsite-pagedesign.jpg",
+    "caption": "Web design for a microsite for MileagePlus Digital Media Store",
+    "tags": [
+      "Web Design"
+    ]
+  },
   "choose-digital-apps": {
     "title": "Choose Digital Apps",
     "hasPost": true,
     "thumbnail": "img/cpy-thumbnails-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/cpy-thumbnails-lg.jpg",
     "caption": "As a minimally-funded startup, Choose Digital was a great opportunity for me to build up all kids of skills: product concept and building, UX and wireframing, front end coding, pattern library, UI writing, etc.",
-    "tags": ["product design","css", "javascript", "html", "cms"]
+    "tags": [
+      "Product Design",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ]
   },
   "viggle-store-webapp": {
     "title": "Viggle Store Web App",
     "hasPost": true,
     "thumbnail": "img/th/viggle-store-home-crop.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/th/viggle-store-home-crop.jpg",
     "caption": "Viggle Store was a digital media store for music, e-books, audiobooks, movies, and TV, and the app supported both the web environment and native webviews",
-    "tags": ["product design","css", "javascript", "html"]
+    "tags": ["Product Design","CSS", "JavaScript", "HTML"]
   },
   "choose-digital-website": {
     "title": "ChooseDigital.com",
     "hasPost": true,
     "thumbnail": "img/th/choose_website_homepage-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/choose_website_homepage.jpg",
     "caption": "The goal for ChooseDigital.com I set out to create: present the company as experts in digital media, awards incentives, and the company’s services as easily integrated into large enterprise portal-style marketplace sies yet with a modern aesthetic. Easy, right?",
-    "tags": ["Project Lead","css", "javascript", "html", "cms"]
+    "tags": ["Project Lead","CSS", "JavaScript", "HTML"]
   },
   "cd-booth-graphics": {
     "title": "Choose Digital Booth Graphics",
     "hasPost": true,
     "thumbnail": "img/th/choose-digital-booth-graphics-thumb.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/choose-digital-booth-graphics.jpg",
-    "tags": ["concept", "design", "print supervision"]
+    "tags": ["Concept", "Design", "Print Supervision"]
   },
   "own-your-music-logo": {
     "title": "Own Your Music logo",
     "hasPost": true,
     "thumbnail": "img/own-your-music-tshirt-logo.png",
+    "thumbnail--sm": "",
     "largeImg": "img/own-your-music-tshirt-logo.png",
-    "tags": ["concept", "design"]
+    "tags": ["Concept", "Design"]
   },
   "avaya-rewards-site": {
     "title": "Avaya Rewards",
     "hasPost": true,
     "thumbnail": "img/th/avaya_dashboard-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/avaya_dashboard.jpg",
-    "tags": ["Project Lead","css", "javascript", "html"]
+    "tags": ["Project Lead","CSS", "JavaScript", "HTML"]
   },
   "prologic-website": {
     "title": "ProLogic Systems",
     "hasPost": false,
     "thumbnail": "img/th/prologic-homepage-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/prologic-homepage-full.jpg",
     "caption": "Prologic wanted a fast, straightforward brochure-style site that would appeal to large, traditional corporate IT departments. Make it blue!",
-    "tags": ["web design", "cms","css", "html", "javascript"]
+    "tags": ["Web Design", "CSS", "HTML", "JavaScript"]
   },
   "grassroots-events": {
     "title": "GrassRoots Events",
     "hasPost": true,
     "thumbnail": "img/th/grevents_home-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/grevents_home.jpg",
-    "tags": ["Project Lead","css", "html"]
+    "tags": ["Project Lead","CSS", "HTML"]
   },
   "amd-rewards-site": {
     "title": "AMD Rewards",
     "hasPost": true,
     "thumbnail": "img/th/amd_home-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/amd_home.jpg",
-    "tags": ["Project Lead","css", "javascript", "html"]
+    "tags": ["Project Lead","CSS", "JavaScript", "HTML"]
   },
   "hp-palm-rewards": {
     "title": "HP Palm Rewards",
     "hasPost": true,
     "thumbnail": "img/th/hprewards-home-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/hprewards_home_lg.jpg",
-    "tags": ["Project Lead","css", "html", "javascript"]
+    "tags": ["Project Lead","CSS", "HTML", "JavaScript"]
   },
   "grizzlies-gametime": {
     "title": "Memphis Grizzlies Gametime",
     "hasPost": true,
     "thumbnail": "img/th/grizzgametime-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/grizzgametime_detail.jpg",
-    "tags": ["Project Lead","css", "html", "javascript"]
+    "tags": ["Project Lead","CSS", "HTML", "JavaScript"]
   },
   "rewards-network-website": {
     "title": "Rewards Network microsite",
     "hasPost": false,
     "thumbnail": "img/th/rndining-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/rndiningsite-detail.jpg",
     "caption": "I presented visual ideas to the client intentionally in contrast to what was their usual style of tiny stock images and heavy blocks of text. A lot of text editing iterations simplified the message and allowed the design to breathe.",
-    "tags": ["web design","css", "html"]
+    "tags": ["Web Design","CSS", "HTML"]
   },
   "international-paper": {
     "title": "International Paper",
     "hasPost": false,
     "thumbnail": "img/th/ip_web-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/ip_web_detail.jpg",
     "caption": "This was a very fast little project that I got to do for International Paper as an explainer for their sustainability message. I was a bit intimidated to be working for such a large company, not knowing what their expectations were and working completely without branding guidelines.",
-    "tags": ["web design","css", "html", "javascript"]
+    "tags": ["Web Design","CSS", "HTML", "JavaScript"]
   },
   "humane-society-of-memphis": {
     "title": "Humane Society of Memphis",
     "hasPost": true,
     "thumbnail": "img/th/humsoc_web-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/humsoc_web_detail.jpg",
-    "tags": ["HTML","css", "javascript", "expression engine cms"]
+    "tags": ["HTML","CSS", "JavaScript"]
   },
   "smallwoods-catalog": {
     "title": "Smallwood’s Catalog",
     "hasPost": false,
     "thumbnail": "img/th/smallwoods-catalog-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/smallwoods-catalog.jpg",
     "caption": "A series of printed catalogs I art directed and designed, and for which I oversaw press production. Smallwoods is a boutique store that outfits staff and officers throughout the ship and yacht industries.",
-    "tags": ["design", "print supervision"]
+    "tags": ["Design", "Print Supervision"]
   },
   "isp-logos": {
     "title": "Logo for ISP",
     "hasPost": false,
     "thumbnail": "img/th/isp-logo-sm.png",
+    "thumbnail--sm": "",
     "largeImg": "img/isp-logo.png",
     "caption": "Logo design and corporate collateral for International Shipping Partners (ISP). I suggested a simple bold shape to differentiate their logo as much as possible from competitors, and to ensure that it worked well when faxed. What I learned more than anything was how to pitch design ideas to a meeting full of people to which the process of design was completely foreign.",
-    "tags": ["logo design"]
+    "tags": ["Logo Design"]
   },
   "silversea-caviar-logos": {
     "title": "Logos for Silversea Cruises",
     "hasPost": false,
     "thumbnail": "img/th/silversea-caviar-logo-sm.png",
+    "thumbnail--sm": "",
     "largeImg": "img/silversea-caviar-logo.png",
-    "tags": ["logo"]
+    "tags": ["Logo Design"]
   },
   "silversea-event-brochure": {
     "title": "Silversea Brochure",
     "hasPost": false,
     "thumbnail": "img/th/silversea-brochure-sm.jpg",
+    "thumbnail--sm": "",
     "largeImg": "img/silversea-brochure.jpg",
-    "tags": ["design", "print supervision"]
+    "tags": ["Design", "Print Supervision"]
   },
   "collette": {
     "title": "Collette",
     "hasPost": false,
     "thumbnail": "img/bigcollette.gif",
+    "thumbnail--sm": "",
     "largeImg": "img/bigcollette.gif",
     "tags": ["Crazy"]
   }

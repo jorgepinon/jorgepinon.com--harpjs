@@ -11,7 +11,8 @@ $(function() {
 	$('.trigger-popup-img').magnificPopup({
 		removalDelay: 200,
 		midClick: true,
-		type: 'inline'
+		type: 'inline',
+		mainClass: 'mfp--animated'
 	});
 
 	$('.trigger-close-popup').on('click',function(){ $.magnificPopup.close(); });

@@ -19,18 +19,6 @@
 @import "modules/footnotes";
 
 
-.annotation {
-	background-color: rgba(0,0,0,0.5);
-	color: rgba(255,255,255,0.9);
-	padding: 0.5em 1em;
-	position: absolute;
-	bottom: $footer-height;
-;
-	left: 0;
-	line-height: 1.2;
-	font-size: 14px;
-}
-
 .categories:before, .categories:after {
 	display: table;
 	content: "";

@@ -98,15 +98,15 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 	}
 
 	// custom animation to slide in from top (class set on init)
-	.mfp-with-anim {
+	.mfp--animated {
 		-webkit-transform: translateY(-100px);
 		transform: translateY(-100px);
 	}
-	&.mfp-ready .mfp-with-anim {
+	&.mfp-ready .mfp--animated {
 		-webkit-transform: translateY(10px);
 		transform: translateY(10px);
 	}
-	&.mfp-removing .mfp-with-anim {
+	&.mfp-removing .mfp--animated {
 		-webkit-transform: translateY(-50px);
 		transform: translateY(-50px);
 	}
@@ -131,7 +131,7 @@ $use-visuallyhidden:              false !default; // Hide content from browsers,
 	}
 
 	figure {
-		padding: 2em;
+		padding: 2em 0.5em;
 		margin: 0;
 		border: none;
 	}
@@ -388,23 +388,44 @@ button {
 
 }
 
-// animated (by default)
-.mfp-with-anim {
-	opacity: 0;
-	transition: all .3s;
+// Popup is animated (by default)
+// overlay animation
+.mfp--animated.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
-.mfp-ready .mfp-with-anim {
-	opacity: 1;
+.mfp--animated.mfp-bg.mfp-ready {
+  opacity: 0.7;
 }
-.mfp-removing .mfp-with-anim {
-	opacity: 0;
+.mfp--animated.mfp-bg.mfp-removing {
+  opacity: 0;
 }
+
+/* content animation */
+.mfp--animated.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp--animated.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp--animated.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
 
 
 .mfp-figure {
 	figcaption {
 		font-size: 1em;
-		line-height: inherit;
+		line-height: 1.4;
 	}
 }
 

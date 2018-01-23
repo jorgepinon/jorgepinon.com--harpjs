@@ -28,13 +28,13 @@ figcaption {
 	color: $grey;
 	max-width: 38em;
 	margin: 0 auto;
-	line-height: 1.2;
 	font-family: $serif-font;
 	font-size: 0.75em;
 	font-style: italic;
 
 	.title {
 		font-size: 1.15em;
+		margin-bottom: 0.85em;
 		color: $page-color;
 	}
 

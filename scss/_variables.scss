@@ -1,8 +1,10 @@
 /* Variables =================================================== */
 
 // type
-$base-font : "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$custom-font : "Source Sans Pro", sans-serif;
+@import url("https://use.typekit.net/cwj0ngf.css");
+
+$base-font : "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$custom-font : "Fira Sans", sans-serif;
 $serif-font : Georgia, "Times New Roman", serif;
 $base-font-size : 14px;
 $base-line-height : 1.4;
@@ -40,16 +42,16 @@ $black 			: #1e2023;
 $dark-grey 		: #282B35;
 $text			: $dark-grey;
 $grey 			: #646872;
-$light-grey 	: #eef0f1;
+$light-grey 	: #f4f6f7;
 $white 			: #fafafa;
 
-$body-bg 			: $light-grey;
+$body-bg 			: $white;
 $body-color 		: $text;
 $page-bg 			: $body-bg;
 $page-color 		: $body-color;
 $panel-bg			: $body-bg;
 $panel-color		: $body-color;
-$primary-color		: #739D2F;
+$primary-color		: rgb(116, 194, 48);
 $secondary-color	: #B53D19;
 $border-color    	: $light-grey;
 $border-width    	: 1px;
@@ -57,7 +59,7 @@ $border-style   	: solid;
 $overlay-bg			: black;
 $overlay-opacity	: 0.7;
 
-$link-color 			: #1BA39C;
+$link-color 			: $primary-color;
 $link-color-visited		: darken($link-color, 10);
 
 $alert-bg 		: #dae5e5;

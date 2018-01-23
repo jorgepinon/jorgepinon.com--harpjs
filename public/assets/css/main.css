@@ -1,4 +1,5 @@
 /* Variables =================================================== */
+@import url("https://use.typekit.net/cwj0ngf.css");
 /* Mixins =================================================== */
 .clearfix {
   *zoom: 1;
@@ -106,10 +107,10 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #eef0f1;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  line-height: 1.4;
+  line-height: 1.8;
   color: #282B35;
 }
 
@@ -121,6 +122,7 @@ body {
 @media screen and (min-width: 1280px) {
   body {
     font-size: 17px;
+    line-height: 1.5;
   }
 }
 aside {
@@ -134,10 +136,10 @@ iframe {
 
 a {
   text-decoration: none;
-  color: #1BA39C;
+  color: #74c230;
 }
 a:visited {
-  color: #147772;
+  color: #5c9926;
 }
 a:hover {
   text-decoration: underline;
@@ -166,13 +168,13 @@ a:active, a:focus {
 }
 
 ::-moz-selection {
-  background-color: #eef0f1;
+  background-color: #f4f6f7;
   color: #282B35;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: #eef0f1;
+  background-color: #f4f6f7;
   color: #282B35;
   text-shadow: none;
 }
@@ -200,7 +202,6 @@ h1, h2, h3, h4 {
 h1, .alpha {
   margin: 0.625em 0 0.375em;
   font-size: 2.441em;
-  font-weight: normal;
   text-transform: none;
 }
 
@@ -230,6 +231,10 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
+hr + .footnote {
+  margin-top: -1.25em;
+}
+
 time, .datestamp, .dateyear {
   text-transform: uppercase;
   font-size: 0.75em;
@@ -246,7 +251,7 @@ blockquote {
   font-size: 0.875em;
   padding: 0.5em 0 0.5em 2em;
   margin: 1em 1em 2em 2em;
-  border-left: solid 3px #eef0f1;
+  border-left: solid 3px #f4f6f7;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -268,6 +273,49 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+pre.code {
+  display: block;
+  background-color: #333;
+  color: #eee;
+  font-family: monospace, sans-serif;
+  font-size: 0.9em;
+  border-radius: 0.15em;
+}
+
+code {
+  padding: 0.5em 1em;
+  margin: 0 0.25em;
+  border-radius: 0.15em;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 75%;
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+  opacity: 0.7;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.35em;
+  left: -0.15em;
+}
+
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
 
 ul, ol {
   padding: 0;
@@ -284,14 +332,6 @@ ol {
 
 li {
   margin-bottom: .5em;
-}
-
-code {
-  font-size: 0.75em;
-  padding: 0.25em 1em;
-  margin: 0 0.25em;
-  border-radius: 0.25em;
-  background: rgba(0, 0, 0, 0.07);
 }
 
 .row {
@@ -763,6 +803,23 @@ footer[role="contentinfo"] {
   position: relative;
 }
 
+.page-index #main {
+  font-size: 1.2em;
+}
+.page-index #main p {
+  font-weight: bold;
+  max-width: 24em;
+}
+.page-index #main p small {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .page-index #main {
+    font-size: 1.75em;
+  }
+}
 .page {
   background-color: rgba(250, 250, 250, 0.9);
   max-width: 42em;
@@ -773,6 +830,11 @@ footer[role="contentinfo"] {
   .page {
     padding: 2em;
   }
+}
+
+.page-work:not(.work-index) #main {
+  max-width: 46em;
+  margin: 0 auto;
 }
 
 .entry {
@@ -801,7 +863,7 @@ footer[role="contentinfo"] {
 [role="contentinfo"] {
   position: relative;
   padding: 1em 0 1.4;
-  background-color: #eef0f1;
+  background-color: #fafafa;
   color: #282B35;
 }
 @media (min-width: 768px) {
@@ -837,7 +899,7 @@ figure {
   padding: 1em;
   margin: 1em 0 2em;
   max-width: 100%;
-  border: solid 1px #eef0f1;
+  border: solid 1px #f4f6f7;
   overflow: hidden;
 }
 figure img {
@@ -860,13 +922,13 @@ figcaption {
   color: #646872;
   max-width: 38em;
   margin: 0 auto;
-  line-height: 1.2;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.75em;
   font-style: italic;
 }
 figcaption .title {
   font-size: 1.15em;
+  margin-bottom: 0.85em;
   color: #282B35;
 }
 figcaption p {
@@ -891,10 +953,10 @@ figcaption p {
 .block-list {
   list-style: none;
   margin-left: 0;
-  border-top: solid 1px #eef0f1;
+  border-top: solid 1px #f4f6f7;
 }
 .block-list > li {
-  border-bottom: solid 1px #eef0f1;
+  border-bottom: solid 1px #f4f6f7;
   padding: 1em;
 }
 
@@ -908,13 +970,18 @@ figcaption p {
   margin: -1em;
 }
 
+.tags {
+  margin: 1em 0;
+}
+
 .masthead {
   position: relative;
   z-index: 100;
-  font-size: 0.925em;
+  font-size: 1.2em;
   margin-bottom: 2em;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
 }
 .masthead .nav--block {
   padding-right: 0.5em;
@@ -923,16 +990,16 @@ figcaption p {
   line-height: 44px;
   padding: 0 0.75em;
   vertical-align: bottom;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 .sitelogo {
   margin: 0;
-  padding: 0 10px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 1em;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 44px;
+  font-weight: bold;
 }
 
 .sitelogo a, .sitelogo a:visited {
@@ -941,7 +1008,6 @@ figcaption p {
 
 @media all and (min-width: 768px) {
   .masthead {
-    font-size: 1.1em;
     padding-top: 1em;
   }
 }
@@ -1000,7 +1066,7 @@ button:focus {
 
 .btn--link {
   background: none;
-  color: #1BA39C;
+  color: #74c230;
   cursor: pointer;
   border: 0;
 }
@@ -1237,10 +1303,12 @@ nav > a:hover {
     margin-right: -1em;
     margin-left: -1em;
     overflow: hidden;
+    text-align: center;
   }
 
   .cards .card {
-    float: left;
+    float: none;
+    display: inline-block;
     width: 30%;
     padding: 0.5em;
     margin-left: 1em;
@@ -1305,15 +1373,15 @@ nav > a:hover {
 .mfp-align-top .mfp-container:before {
   display: none;
 }
-.mfp-align-top .mfp-with-anim {
+.mfp-align-top .mfp--animated {
   -webkit-transform: translateY(-100px);
   transform: translateY(-100px);
 }
-.mfp-align-top.mfp-ready .mfp-with-anim {
+.mfp-align-top.mfp-ready .mfp--animated {
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
-.mfp-align-top.mfp-removing .mfp-with-anim {
+.mfp-align-top.mfp-removing .mfp--animated {
   -webkit-transform: translateY(-50px);
   transform: translateY(-50px);
 }
@@ -1333,7 +1401,7 @@ nav > a:hover {
   padding-bottom: 40px;
 }
 .mfp-content figure {
-  padding: 2em;
+  padding: 2em 0.5em;
   margin: 0;
   border: none;
 }
@@ -1536,22 +1604,40 @@ button::-moz-focus-inner {
   border-left: 18px solid #999;
 }
 
-.mfp-with-anim {
+.mfp--animated.mfp-bg {
   opacity: 0;
-  transition: all .3s;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
 
-.mfp-ready .mfp-with-anim {
+.mfp--animated.mfp-bg.mfp-ready {
+  opacity: 0.7;
+}
+
+.mfp--animated.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content animation */
+.mfp--animated.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp--animated.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
 }
 
-.mfp-removing .mfp-with-anim {
+.mfp--animated.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
 
 .mfp-figure figcaption {
   font-size: 1em;
-  line-height: inherit;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 900px) {
@@ -1573,23 +1659,12 @@ button::-moz-focus-inner {
 .footnotes {
   margin: 6em 0 3em;
   padding: 1em;
-  border-top: solid 1px #eef0f1;
+  border-top: solid 1px #f4f6f7;
   list-style: none;
   font-size: 0.75em;
 }
 .footnotes li {
   margin-bottom: 1em;
-}
-
-.annotation {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 0.5em 1em;
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  line-height: 1.2;
-  font-size: 14px;
 }
 
 .categories:before, .categories:after {

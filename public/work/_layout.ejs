@@ -14,9 +14,6 @@
 	<link rel="stylesheet" href="/assets/css/main.css" media="screen" charset="utf-8">
 	<link rel="alternate" type="application/rss+xml" href="rss.xml" media="screen" title="<%= site_title %> RSS" charset="utf-8">
 
-	<script type="text/javascript" src="//use.typekit.net/zqx8gwd.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
 	<%- partial("../_partials/_ga_tracking") %>
 
 </head>
@@ -32,6 +29,9 @@
 
 			<div class="row">
 				<div class="small-12 medium-11 medium-centered large-10 column">
+					<% if(current.source != 'index') { %>
+					<a href="/work/">Back</a>
+					<% } %>
 					<%- yield %>
 				</div>
 			</div>

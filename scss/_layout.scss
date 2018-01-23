@@ -17,6 +17,24 @@ $constrained-width : 1200px !default;
 	// keep it above wallpaper
 	position: relative;
 }
+.page-index #main {
+	font-size: 1.2em;
+
+	p {
+		font-weight: bold;
+		max-width: 24em;
+		small {
+			font-size: 0.5em;
+			font-weight: normal;
+		}
+	}
+}
+@include respond-min($breakpoint-medium) {
+	.page-index #main {
+		font-size: 1.75em;
+	}
+}
+
 
 .page {
 	background-color: rgba(250, 250, 250, 0.9);
@@ -29,6 +47,12 @@ $constrained-width : 1200px !default;
 	}
 
 }
+
+.page-work:not(.work-index) #main {
+	max-width: 46em;
+	margin: 0 auto;
+}
+
 
 .entry {
 	overflow: hidden;

@@ -22,10 +22,9 @@ body {
 	background-color : $body-bg;
 	font-family : $base-font;
 	font-size: 100%;
-	line-height : $base-line-height;
+	line-height : 1.8;
 	color : $body-color;
 }
-
 @include respond-min($breakpoint-medium) {
 	body {
 		font-size : $tablet-base-font-size;
@@ -35,6 +34,7 @@ body {
 @include respond-min($breakpoint-xl) {
 	body {
 		font-size : $desktop-base-font-size;
+		line-height: 1.5;
 	}
 }
 
@@ -108,7 +108,6 @@ p {
 	margin: 0 0 2em;
 	font-size: 1em;
 }
-
 small {
 	font-size: .85em;
 }
@@ -123,7 +122,6 @@ h1, h2, h3, h4 {
 h1, .alpha {
 	margin: 0.625em 0 0.375em;
 	font-size: 2.441em;
-	font-weight: normal;
 	text-transform: none;
 }
 
@@ -149,7 +147,9 @@ hr {
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #fff;
 }
-
+hr + .footnote {
+	margin-top: -1.25em;
+}
 time, .datestamp, .dateyear {
 	text-transform: uppercase;
 	font-size: 0.75em;
@@ -188,7 +188,56 @@ pre {
 	font-family: inherit;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+
+	&.code {
+		display: block;
+		background-color: #333;
+		color: #eee;
+		font-family: monospace, sans-serif;
+		font-size: 0.9em;
+		border-radius: 0.15em;
+	}
 }
+code {
+	padding: 0.5em 1em;
+	margin: 0 0.25em;
+	border-radius: 0.15em;
+	background: rgba(0,0,0,0.07);
+}
+
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+
+  opacity: 0.7;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.35em;
+  left: -0.15em;
+}
+
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+
 
 //   =LISTS   ==================================================
 ul, ol {
@@ -199,13 +248,4 @@ ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
 ol { list-style: decimal; }
 li {
 	margin-bottom: .5em;
-}
-
-
-code {
-	font-size: 0.75em;
-	padding: 0.25em 1em;
-	margin: 0 0.25em;
-	border-radius: 0.25em;
-	background: rgba(0,0,0,0.07);
 }

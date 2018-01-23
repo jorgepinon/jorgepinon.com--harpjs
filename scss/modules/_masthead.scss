@@ -3,10 +3,11 @@
 .masthead {
 	position: relative;
 	z-index: 100;
-	font-size: 0.925em;
+	font-size: 1.2em;
 	margin-bottom: 2em;
 	overflow: hidden;
 	background-color: rgba(255,255,255,0.7);
+	font-weight: bold;
 
 	.nav--block {
 		padding-right: 0.5em;
@@ -15,7 +16,6 @@
 			line-height: 44px;
 			padding: 0 0.75em;
 			vertical-align: bottom;
-			font-weight: bold;
 			text-transform: uppercase;
 		}
 	}
@@ -23,10 +23,11 @@
 
 .sitelogo {
 	margin: 0;
-	padding: 0 10px;
+	padding: 0 1em;
 	font-family : $base-font;
 	font-size: 1em;
 	line-height: 44px;
+	font-weight: bold;
 }
 .sitelogo a, .sitelogo a:visited {
 	text-align: left;
@@ -34,7 +35,6 @@
 
 @media all and (min-width: 768px) {
 	.masthead {
-		font-size: 1.1em;
 		padding-top: 1em;
 	}
 

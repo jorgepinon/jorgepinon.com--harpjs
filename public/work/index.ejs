@@ -29,7 +29,7 @@
 				<% if ( work.caption ) { %>
 				<figcaption>
 					<h4 class="title"><%- work.title %></h4>
-					<%- work.caption %>
+					<div class="description"><%- work.caption %></div>
 					<ul class="tags list--unstyled">
 						<% work.tags.forEach(function(el,i) { %>
 							<li class="tag"><%- el %></li>

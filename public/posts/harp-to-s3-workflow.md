@@ -14,8 +14,17 @@ So after a bit of hacking on it, here’s my new harp-to-s3 workflow:
 1. Once you’re done with local changes in harp, open a terminal and ```cd``` into the root directory of your site
 2. Run ```harp compile```
 3. Then ```cd www``` (the directory where harp places the compiled html)
-4. Then ```aws s3 sync . s3://www.jorgepinon.com --exclude "*.DS_Store" --dryrun``` — I like to exclude those dumb .DS_Store files and use the ```--dryrun``` flag first to see what would be uploaded.
-5. If the dry run list looks correct, then ```aws s3 sync . s3://www.jorgepinon.com --exclude "*.DS_Store"```
+4. Here’s where we use the AWS command line tool. The sync command has a few flags you can use, but the two that are pertinent here are ```--include``` and ```--exclude```. Those can be used together to get the results you need.
+
+	By default the sync command syncs all files in the directory, unless you flag them with exclude. So to sync the whole directory, here’s what I use: ```aws s3 sync . s3://www.jorgepinon.com --exclude "*.DS_Store" --dryrun``` — I like to exclude those dumb .DS_Store files and use the ```--dryrun``` flag first to see what would be uploaded.
+
+	If you want to instead sync a single file, like say your main.css file, you have to first exclude everything and then include only that file:
+	```aws s3 sync . s3://www.jorgepinon.com --exclude "*" --include "/css/site.css"```
+
+	You can sync multiple files by adding extra includes as needed:
+	```aws s3 sync . s3://www.jorgepinon.com --exclude "*" --include "/css/site.css" --include "/js/main.js" --include "/img/new-header-image.jpg"```
+
+5. If you use the dryrun flag and the results look correct, then rerun the same command without dryrun.
 6. Confirm live changes by pointing your browser to your site.
 
 ## Automated deployment

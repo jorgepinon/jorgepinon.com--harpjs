@@ -1,74 +1,23 @@
-<div class="row">
-	<div class="column">
+<%
+	var thisYear = new Date().getFullYear();
+	var exp = thisYear - 2004;
+%>
 
-		<div class="cards">
+	<div class="row">
 
-			<% for(var slug in public.work._data) { %>
-				<% var work = public.work._data[slug]; %>
+		<div class="column">
 
-				<figure class="card">
-					<% if( work.hasPost == true ) { %>
-						<a href="/work/<%- slug %>.html" title="read more">
-							<img class="card-image" src="/work/<%- work.thumbnail %>" alt="" data-large-image="<%- work.largeImg %>">
-						</a>
-					<% } else { %>
-						<span>
-							<img src="/work/<%- work.thumbnail %>" alt="" data-mfp-src="#popup-<%- slug %>" class="trigger-popup-img card-image">
-						</span>
-					<% } %>
-					<figcaption>
-						<% if( work.hasPost == true ) { %>
-							<a href="/work/<%- slug %>.html">
-								<h2 class="card-title">
-									<%- work.title %>
-								</h2>
-							</a>
-						<% } else { %>
-							<h2 class="card-title">
-								<%- work.title %>
-							</h2>
-						<% } %>
-					</figcaption>
-				</figure>
+			<p>My name is Jorge Piñon.</p>
+			
+			<p>I’m a freelance web designer and front-end web developer with plenty of full stack experience.<sup>*</sup> I
+			build web sites and web apps for a living. Here’s the list of stuff I’m mostly familiar with: HTML, CSS, JavaScript, jQuery,
+			Illustrator, Photoshop, Git, NPM, Bootstrap, Foundation, Wordpress, PHP, Invision, Rails, Node.js, Java/Spring, Grunt, .NET.</p>
 
-				<div class="mfp-hide mfp-figure" id="popup-<%- slug %>">
-					<figure>
-						<img src="/work/<%- work.largeImg %>" class="trigger-popup-img">
-						<% if ( work.caption ) { %>
-							<figcaption>
-								<h2 class="card-title">
-									<%- work.title %>
-								</h2>
-								<div class="card-description">
-									<%- work.caption %>
-								</div>
+			<p><a href="/work">Examples of work</a></p>
 
-								<ul class="tags list--unstyled">
-								<% work.tags.forEach(function(el,i) { %>
-									<li class="tag">
-										<%- el %>
-									</li>
-								<% }); %>
-								</ul>
-							</figcaption>
-						<% } %>
-					</figure>
-				</div>
-
-			<% }; %>
+			<hr>
+			<p class="footnote"><small>* Although apparently not enough to call myself a full-stack developer.</small></p>
 
 		</div>
 
 	</div>
-</div>
-
-
-<br><br>
-<div class="row">
-	<div class="small-11 small-centered medium-9 column">
-		<p class="text--centered">
-			This is the personal portfolio site of Jorge Piñon. Got a project we can work on? Contact me <a href="https://twitter.com/jorgepinon">@jorgepinon</a> on Twitter.
-		</p>
-
-	</div>
-</div>

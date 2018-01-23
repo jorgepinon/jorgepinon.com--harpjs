@@ -1,0 +1,157 @@
+<div class="entry">
+
+	<h1>Sentree.com <span class="dateyear">2017</span></h1>
+
+	<%- partial('_tags') %>
+
+	<p>Sentree was a new IoT device that opens the market for managed home and commercial HVAC systems. Contractors install the device and can receive alerts when there's a problem. </p>
+
+	<p>The initial site at <a href="http://www.sentree.com">sentree.com</a> was meant to answer initial questions that an HVAC contractor would have about how the system worked. The goal was to capture contact information for follow-up demos. </p>
+
+	<div class="row">
+
+		<figure>
+			<img src="img/sentree.com-device-layout-design.jpg" alt="screenshot of Sentree homepage detail">
+			<figcaption>Homepage detail</figcaption>
+		</figure>
+
+	</div>
+
+	<p>The client wanted a short deadline and asked that it be created with the X-Theme wordpress platform. That was my first time using X-Theme and although the appeal of it is obvious, I realized immediately that this is not for me.</p>
+
+	<p>I learned web standards-based development, and this seems like a complete regression both in terms of process and actual code quality. All primary element styles can be applied through the Wordpress interface, which means that all of it gets added inline to each element.</p>
+
+	<div class="row" style="position: relative">
+		<style>
+			.signal {
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				width: 50px;
+				height: 50px;
+				z-index: 10;
+			}
+	
+			.signal::before {
+				content: "";
+				position: absolute;
+				top: -3px;
+				left: -2px;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #249D7F;
+				border-radius: 100%;
+				-webkit-animation: pulse 3s linear infinite;
+				animation: pulse 3s linear infinite;
+			}
+	
+			.signal::after {
+				content: "";
+				position: absolute;
+				top: -3px;
+				left: -2px;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #249D7F;
+				border-radius: 100%;
+				-webkit-animation: pulse 3s linear infinite;
+				animation: pulse 3s linear infinite;
+				animation-delay: 0s;
+				animation-delay: -1.5s;
+			}
+	
+			@keyframes pulse {
+				0% {
+					opacity: 0;
+					transform: scale(1);
+				}
+	
+				50% {
+					opacity: 1;
+					transform: scale(1.5);
+				}
+	
+				100% {
+					opacity: 0;
+					transform: scale(2);
+				}
+			}
+		</style>
+		<br>
+		<br>
+		<br>
+		<div class="signal">
+		</div>
+	
+	</div>
+	
+	<p>One thing I did like is the radar signal animation I used to indicate that the device's sensors would broadcast their status to the contractor. The looping animation was achieved using <code>scale3d</code> animation that expanded and faded two simple circle elements. </p>
+
+	<p>Here’s the HTML and CSS for that animation:</p>
+	<code>&lt;div class="signal"&gt;&lt;/div&gt;</code>
+
+	<br><br>
+
+	<pre class="code">
+
+	.signal { 
+		position: absolute; 
+		top: 10%; 
+		left: 10%; 
+		width: 50px; 
+		height: 50px; 
+		z-index: 10; 
+	} 
+	.signal::before { 
+		content: " "; 
+		position: absolute; 
+		top: -3px; 
+		left: -2px; 
+		width: 100%; 
+		height: 100%; 
+		border: 1px solid #249D7F; 
+		border-radius: 100%;
+		-webkit-animation: pulse 3s linear infinite; 
+		animation: pulse 3s linear infinite; 
+	} 
+		
+	.signal::after { 
+		content: " "; 
+		position: absolute; 
+		top: -3px; 
+		left: -2px; 
+		width: 100%; 
+		height: 100%; 
+		border: 1px solid #249D7F; 
+		border-radius: 100%; 
+		-webkit-animation: pulse 3s linear infinite; 
+		animation: pulse 3s linear infinite; 
+		animation-delay: 0s; 
+		animation-delay: -1.5s; 
+	} 
+	@keyframes pulse { 
+		0% { 
+			opacity: 0; 
+			transform: scale(1); 
+		} 
+		50% { 
+			opacity: 1; 
+			transform: scale(1.5); 
+		} 
+		100% { 
+			opacity: 0; 
+			transform: scale(2); 
+		} 
+	}
+	</pre>
+
+	<p>One of the tricky parts was positioning it on the center of the device image, which because it was responsive, meant that its size and position changed with the size of the viewport.</p>
+
+	<div class="row">
+		<figure>
+			<img src="img/sentree.com-signal-animation-detail.jpg" alt="screenshot of the signal animation emanating from the center of the device image">
+			<figcaption>Signal animation centered on device image</figcaption>
+		</figure>
+	</div>
+
+</div>
