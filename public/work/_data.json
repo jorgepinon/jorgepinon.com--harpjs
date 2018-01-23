@@ -54,12 +54,12 @@
     ]
   },
   "small-screen-navigation-pattern": {
-    "title": "Small screen alternating nav pattern",
+    "title": "Alternating mobile nav pattern",
     "hasPost": false,
     "thumbnail": "img/th/small-screen-navigation--thumb.png",
     "thumbnail--sm": "",
     "largeImg": "img/mobile-alternating-nav-search-pattern.png",
-    "caption": "Small screen alternating nav pattern",
+    "caption": "Menu and search are triggered from either the left or right side of title",
     "tags": [
       "UI"
     ]
